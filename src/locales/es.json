@@ -1,0 +1,212 @@
+{
+    "nav": {
+        "iv": "Terapia IV",
+        "medtech": "MedTech",
+        "education": "Educaci\u00f3n",
+        "book": "Agendar cita"
+    },
+    "iv_hero": {
+        "headline": "Rehidrata. Recupera. Restaura.",
+        "subline": "Sesiones de terapia IV personalizadas en un ambiente cl\u00ednico y tranquilo.",
+        "cta": "Agenda tu sesi\u00f3n",
+        "badge1": "M\u00e9dico certificado",
+        "badge2": "Ambiente privado",
+        "badge3": "30\u201360 min"
+    },
+    "iv_services": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Formulaciones dise\u00f1adas para tus necesidades espec\u00edficas",
+        "from": "Desde"
+    },
+    "services": [
+        {
+            "id": "hydration",
+            "name": "Hidrataci\u00f3n Total",
+            "desc": "Recupera el balance h\u00eddrico con electrolitos esenciales y vitamina C.",
+            "price": "$80",
+            "duration": "30 min"
+        },
+        {
+            "id": "vitamin",
+            "name": "Infusi\u00f3n de Vitaminas",
+            "desc": "Complejo B + zinc + magnesio para energ\u00eda sostenida y bienestar general.",
+            "price": "$110",
+            "duration": "45 min"
+        },
+        {
+            "id": "recovery",
+            "name": "Gotero de Recuperaci\u00f3n",
+            "desc": "Anti-inflamatorio, analg\u00e9sico IV y fluidos para recuperaci\u00f3n post-esfuerzo.",
+            "price": "$130",
+            "duration": "60 min"
+        },
+        {
+            "id": "custom",
+            "name": "F\u00f3rmula Personalizada",
+            "desc": "Dise\u00f1ada contigo en consulta previa seg\u00fan tus objetivos de salud.",
+            "price": "$150+",
+            "duration": "60 min"
+        }
+    ],
+    "how_it_works": {
+        "title": "\u00bfC\u00f3mo funciona?",
+        "steps": [
+            {
+                "num": "01",
+                "label": "Agenda",
+                "desc": "Selecciona tu servicio y elige un horario disponible."
+            },
+            {
+                "num": "02",
+                "label": "Consulta",
+                "desc": "Breve evaluaci\u00f3n m\u00e9dica antes de iniciar la sesi\u00f3n."
+            },
+            {
+                "num": "03",
+                "label": "Sesi\u00f3n",
+                "desc": "Rel\u00e1jate mientras recibes tu gotero en un espacio privado."
+            }
+        ]
+    },
+    "trust": {
+        "items": [
+            "Administrado por m\u00e9dico certificado",
+            "Ambiente 100% privado",
+            "Sesiones de 30\u201360 min",
+            "Sin lista de espera larga"
+        ]
+    },
+    "cta_block": {
+        "headline": "\u00bfLista para sentirte mejor?",
+        "sub": "Agenda hoy tu sesi\u00f3n de terapia IV.",
+        "btn": "Reservar ahora"
+    },
+    "booking": {
+        "title": "Agendar cita",
+        "step1": "Selecciona tu servicio",
+        "step2": "Elige fecha y hora",
+        "step3": "Tus datos",
+        "confirm": "Confirmar cita",
+        "name_label": "Nombre completo",
+        "phone_label": "WhatsApp",
+        "notes_label": "Notas (opcional)",
+        "name_placeholder": "Ej. Mar\u00eda Rodr\u00edguez",
+        "phone_placeholder": "+507 6000-0000",
+        "notes_placeholder": "Alergias, condiciones, preguntas...",
+        "success": "\u00a1Cita confirmada! Te esperamos el {date} a las {time}.",
+        "success_sub": "Recibir\u00e1s un mensaje de confirmaci\u00f3n por WhatsApp.",
+        "next": "Siguiente",
+        "back": "Atr\u00e1s",
+        "close": "Cerrar",
+        "available": "Disponible",
+        "unavailable": "Ocupado",
+        "select_date": "Selecciona un d\u00eda",
+        "select_time": "Selecciona un horario"
+    },
+    "medtech_hero": {
+        "headline": "Construyendo el futuro de la salud materno-infantil.",
+        "subline": "NatalTech desarrolla herramientas digitales para el monitoreo prenatal y el seguimiento pedi\u00e1trico temprano en Latinoam\u00e9rica.",
+        "badge": "Startup en etapa semilla \u00b7 Panam\u00e1"
+    },
+    "medtech_problem": {
+        "problem_label": "El Problema",
+        "problem_text": "En Latinoam\u00e9rica, m\u00e1s del 40% de las complicaciones perinatales podr\u00eda prevenirse con monitoreo continuo y acceso oportuno a informaci\u00f3n cl\u00ednica. Las madres rurales y de bajos recursos son las m\u00e1s afectadas por la fragmentaci\u00f3n del sistema de salud.",
+        "vision_label": "La Visi\u00f3n",
+        "vision_text": "Una plataforma integrada que conecta a m\u00e9dicos, pacientes y datos en tiempo real \u2014 reduciendo la brecha de atenci\u00f3n prenatal y pedi\u00e1trica con tecnolog\u00eda accesible."
+    },
+    "medtech_building": {
+        "title": "Lo que estamos construyendo",
+        "features": [
+            {
+                "id": "monitor",
+                "headline": "Monitoreo Prenatal Remoto",
+                "desc": "Dispositivos de bajo costo y app m\u00f3vil para seguimiento de signos vitales maternos desde casa. Alertas tempranas para m\u00e9dicos tratantes."
+            },
+            {
+                "id": "records",
+                "headline": "Expediente Pedi\u00e1trico Digital",
+                "desc": "Historial cl\u00ednico unificado del ni\u00f1o desde el nacimiento. Vacunas, curvas de crecimiento y alertas de salud en un solo lugar."
+            },
+            {
+                "id": "ai",
+                "headline": "Triaje Inteligente",
+                "desc": "Algoritmo de clasificaci\u00f3n de riesgo que ayuda a las familias a decidir cu\u00e1ndo acudir a urgencias \u2014 reduciendo visitas innecesarias en un 35%."
+            }
+        ]
+    },
+    "medtech_founder": {
+        "label": "Fundadora",
+        "name": "Dra. Valentina Reyes",
+        "credentials": "MD \u00b7 Pediatr\u00eda & Neonatolog\u00eda \u00b7 Universidad de Panam\u00e1",
+        "bio": "M\u00e9dico independiente con 8 a\u00f1os de experiencia en pediatr\u00eda y cuidado neonatal. Despu\u00e9s de ver de cerca las brechas del sistema de salud materno-infantil en Panam\u00e1, fund\u00f3 NatalTech para crear soluciones tecnol\u00f3gicas centradas en el paciente.",
+        "linkedin": "https://linkedin.com"
+    },
+    "medtech_cta": {
+        "headline": "\u00bfInteresado en colaborar?",
+        "sub": "Estamos buscando socios estrat\u00e9gicos, inversores y aliados del sector salud.",
+        "email_btn": "Escr\u00edbenos",
+        "deck_btn": "Descargar one-pager"
+    },
+    "education_hero": {
+        "headline": "Salud explicada con claridad.",
+        "subline": "Art\u00edculos, consejos y videos para padres, pacientes y mentes curiosas."
+    },
+    "education_filters": {
+        "all": "Todo",
+        "parents": "Para Padres",
+        "patients": "Para Pacientes"
+    },
+    "articles": [
+        {
+            "id": "art1",
+            "category": "parents",
+            "category_label": "Para Padres",
+            "title": "Se\u00f1ales de alarma en el reci\u00e9n nacido que toda madre debe conocer",
+            "excerpt": "Los primeros 28 d\u00edas son cr\u00edticos. Aprende a identificar s\u00edntomas que requieren atenci\u00f3n m\u00e9dica inmediata.",
+            "read_time": "5 min"
+        },
+        {
+            "id": "art2",
+            "category": "patients",
+            "category_label": "Para Pacientes",
+            "title": "\u00bfCu\u00e1ndo la terapia IV es mejor que tomar pastillas?",
+            "excerpt": "La v\u00eda intravenosa tiene ventajas claras en ciertos escenarios. Te explicamos cu\u00e1ndo y por qu\u00e9.",
+            "read_time": "4 min"
+        },
+        {
+            "id": "art3",
+            "category": "parents",
+            "category_label": "Para Padres",
+            "title": "Gu\u00eda de vacunaci\u00f3n 2025: calendario completo para ni\u00f1os de 0 a 5 a\u00f1os",
+            "excerpt": "Todo lo que necesitas saber sobre el esquema de vacunaci\u00f3n recomendado, con fechas y dosis.",
+            "read_time": "7 min"
+        },
+        {
+            "id": "art4",
+            "category": "patients",
+            "category_label": "Para Pacientes",
+            "title": "Deshidrataci\u00f3n en adultos: s\u00edntomas que ignoramos y c\u00f3mo prevenirla",
+            "excerpt": "La deshidrataci\u00f3n cr\u00f3nica leve afecta la concentraci\u00f3n, el estado de \u00e1nimo y el metabolismo.",
+            "read_time": "4 min"
+        }
+    ],
+    "video_section": {
+        "title": "Video destacado",
+        "video_title": "\u00bfQu\u00e9 le pasa al cuerpo cuando est\u00e1 deshidratado?",
+        "video_desc": "En este video explico paso a paso c\u00f3mo la deshidrataci\u00f3n afecta cada sistema del cuerpo \u2014 y por qu\u00e9 un gotero puede ser la soluci\u00f3n m\u00e1s efectiva."
+    },
+    "newsletter": {
+        "headline": "Recibe consejos de salud en tu correo",
+        "sub": "Sin spam. Solo informaci\u00f3n cl\u00ednica clara y \u00fatil, cada dos semanas.",
+        "placeholder": "tucorreo@ejemplo.com",
+        "btn": "Suscribirme",
+        "success": "\u00a1Suscrito! Bienvenido a la comunidad."
+    },
+    "footer": {
+        "tagline": "Pediatr\u00eda & Neonatolog\u00eda \u00b7 Panam\u00e1",
+        "rights": "\u00a9 2026 Dra. Valentina Reyes. Todos los derechos reservados.",
+        "instagram": "https://instagram.com/dra.valentina.reyes",
+        "whatsapp": "https://wa.me/50760000000",
+        "email": "mailto:hola@drvalentinareyes.com"
+    }
+}

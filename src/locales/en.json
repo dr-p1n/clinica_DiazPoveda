@@ -1,0 +1,212 @@
+{
+    "nav": {
+        "iv": "IV Therapy",
+        "medtech": "MedTech",
+        "education": "Education",
+        "book": "Book a session"
+    },
+    "iv_hero": {
+        "headline": "Rehydrate. Recover. Restore.",
+        "subline": "Personalized IV therapy sessions in a calm, clinical environment.",
+        "cta": "Book your session",
+        "badge1": "Physician-administered",
+        "badge2": "Private setting",
+        "badge3": "30\u201360 min"
+    },
+    "iv_services": {
+        "title": "Our Services",
+        "subtitle": "Formulations designed for your specific needs",
+        "from": "From"
+    },
+    "services": [
+        {
+            "id": "hydration",
+            "name": "Total Hydration",
+            "desc": "Restore fluid balance with essential electrolytes and vitamin C.",
+            "price": "$80",
+            "duration": "30 min"
+        },
+        {
+            "id": "vitamin",
+            "name": "Vitamin Infusion",
+            "desc": "B complex + zinc + magnesium for sustained energy and general wellbeing.",
+            "price": "$110",
+            "duration": "45 min"
+        },
+        {
+            "id": "recovery",
+            "name": "Recovery Drip",
+            "desc": "Anti-inflammatory, IV analgesic and fluids for post-exertion recovery.",
+            "price": "$130",
+            "duration": "60 min"
+        },
+        {
+            "id": "custom",
+            "name": "Custom Formula",
+            "desc": "Designed with you in a prior consultation based on your health goals.",
+            "price": "$150+",
+            "duration": "60 min"
+        }
+    ],
+    "how_it_works": {
+        "title": "How does it work?",
+        "steps": [
+            {
+                "num": "01",
+                "label": "Book",
+                "desc": "Select your service and choose an available time slot."
+            },
+            {
+                "num": "02",
+                "label": "Consult",
+                "desc": "Brief medical evaluation before starting the session."
+            },
+            {
+                "num": "03",
+                "label": "Session",
+                "desc": "Relax while you receive your drip in a private space."
+            }
+        ]
+    },
+    "trust": {
+        "items": [
+            "Physician-certified administration",
+            "100% private setting",
+            "30\u201360 min sessions",
+            "No long waiting lists"
+        ]
+    },
+    "cta_block": {
+        "headline": "Ready to feel better?",
+        "sub": "Book your IV therapy session today.",
+        "btn": "Reserve now"
+    },
+    "booking": {
+        "title": "Book an appointment",
+        "step1": "Select your service",
+        "step2": "Choose date & time",
+        "step3": "Your details",
+        "confirm": "Confirm appointment",
+        "name_label": "Full name",
+        "phone_label": "WhatsApp",
+        "notes_label": "Notes (optional)",
+        "name_placeholder": "e.g. Maria Rodriguez",
+        "phone_placeholder": "+507 6000-0000",
+        "notes_placeholder": "Allergies, conditions, questions...",
+        "success": "Appointment confirmed! We'll see you on {date} at {time}.",
+        "success_sub": "You'll receive a confirmation via WhatsApp.",
+        "next": "Next",
+        "back": "Back",
+        "close": "Close",
+        "available": "Available",
+        "unavailable": "Taken",
+        "select_date": "Select a day",
+        "select_time": "Select a time"
+    },
+    "medtech_hero": {
+        "headline": "Building the future of maternal and child health.",
+        "subline": "NatalTech develops digital tools for prenatal monitoring and early pediatric follow-up across Latin America.",
+        "badge": "Seed stage startup \u00b7 Panama"
+    },
+    "medtech_problem": {
+        "problem_label": "The Problem",
+        "problem_text": "In Latin America, over 40% of perinatal complications could be prevented with continuous monitoring and timely access to clinical information. Rural and low-income mothers are most affected by the fragmentation of the healthcare system.",
+        "vision_label": "The Vision",
+        "vision_text": "An integrated platform connecting doctors, patients, and data in real time \u2014 bridging the prenatal and pediatric care gap with accessible technology."
+    },
+    "medtech_building": {
+        "title": "What we're building",
+        "features": [
+            {
+                "id": "monitor",
+                "headline": "Remote Prenatal Monitoring",
+                "desc": "Low-cost devices and mobile app for tracking maternal vital signs from home. Early alerts for treating physicians."
+            },
+            {
+                "id": "records",
+                "headline": "Digital Pediatric Record",
+                "desc": "Unified child health record from birth. Vaccines, growth curves, and health alerts in one place."
+            },
+            {
+                "id": "ai",
+                "headline": "Smart Triage",
+                "desc": "Risk classification algorithm that helps families decide when to go to the ER \u2014 reducing unnecessary visits by 35%."
+            }
+        ]
+    },
+    "medtech_founder": {
+        "label": "Founder",
+        "name": "Dr. Valentina Reyes",
+        "credentials": "MD \u00b7 Pediatrics & Neonatology \u00b7 University of Panama",
+        "bio": "Independent physician with 8 years of experience in pediatrics and neonatal care. After witnessing the gaps in Panama's maternal and child health system firsthand, she founded NatalTech to create patient-centered technology solutions.",
+        "linkedin": "https://linkedin.com"
+    },
+    "medtech_cta": {
+        "headline": "Interested in collaborating?",
+        "sub": "We're looking for strategic partners, investors, and health sector allies.",
+        "email_btn": "Get in touch",
+        "deck_btn": "Download one-pager"
+    },
+    "education_hero": {
+        "headline": "Health, explained simply.",
+        "subline": "Articles, tips, and videos for parents, patients, and curious minds."
+    },
+    "education_filters": {
+        "all": "All",
+        "parents": "For Parents",
+        "patients": "For Patients"
+    },
+    "articles": [
+        {
+            "id": "art1",
+            "category": "parents",
+            "category_label": "For Parents",
+            "title": "Warning signs in newborns every mother should know",
+            "excerpt": "The first 28 days are critical. Learn to identify symptoms that require immediate medical attention.",
+            "read_time": "5 min"
+        },
+        {
+            "id": "art2",
+            "category": "patients",
+            "category_label": "For Patients",
+            "title": "When is IV therapy better than taking pills?",
+            "excerpt": "The intravenous route has clear advantages in certain scenarios. We explain when and why.",
+            "read_time": "4 min"
+        },
+        {
+            "id": "art3",
+            "category": "parents",
+            "category_label": "For Parents",
+            "title": "2025 Vaccination guide: complete schedule for children ages 0\u20135",
+            "excerpt": "Everything you need to know about the recommended vaccination schedule, with dates and doses.",
+            "read_time": "7 min"
+        },
+        {
+            "id": "art4",
+            "category": "patients",
+            "category_label": "For Patients",
+            "title": "Adult dehydration: symptoms we ignore and how to prevent it",
+            "excerpt": "Mild chronic dehydration affects concentration, mood, and metabolism more than we think.",
+            "read_time": "4 min"
+        }
+    ],
+    "video_section": {
+        "title": "Featured video",
+        "video_title": "What happens to your body when you're dehydrated?",
+        "video_desc": "In this video I explain step by step how dehydration affects every body system \u2014 and why an IV drip can be the most effective solution."
+    },
+    "newsletter": {
+        "headline": "Get health tips in your inbox",
+        "sub": "No spam. Just clear, useful clinical information, every two weeks.",
+        "placeholder": "youremail@example.com",
+        "btn": "Subscribe",
+        "success": "Subscribed! Welcome to the community."
+    },
+    "footer": {
+        "tagline": "Pediatrics & Neonatology \u00b7 Panama",
+        "rights": "\u00a9 2026 Dr. Valentina Reyes. All rights reserved.",
+        "instagram": "https://instagram.com/dra.valentina.reyes",
+        "whatsapp": "https://wa.me/50760000000",
+        "email": "mailto:hola@drvalentinareyes.com"
+    }
+}
