@@ -7,14 +7,14 @@
 
 /* ─── CSS Variables ─── */
 :root {
-  --color-bg: #FFFDF5;
-  --color-primary: #F5E9A0;
-  --color-accent: #E8A87C;
-  --color-text: #2D2A26;
-  --color-muted: #A89F8C;
-  --color-surface: #FFF8E7;
-  --color-dark: #2D2A26;
-  --color-dark-surface: #3A3630;
+  --color-bg: #fffdf5;
+  --color-primary: #f5e9a0;
+  --color-accent: #e8a87c;
+  --color-text: #2d2a26;
+  --color-muted: #a89f8c;
+  --color-surface: #fff8e7;
+  --color-dark: #2d2a26;
+  --color-dark-surface: #3a3630;
   --font-display: 'Fraunces', serif;
   --font-body: 'DM Sans', sans-serif;
   --radius-card: 12px;
@@ -45,38 +45,72 @@ body {
 
 /* ─── Animations ─── */
 @keyframes animationIn {
-  0% { opacity: 0; transform: translateY(24px); filter: blur(6px); }
-  100% { opacity: 1; transform: translateY(0); filter: blur(0px); }
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes floatY {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes shimmerMove {
-  0% { transform: translateX(-150%) skewX(-20deg); }
-  100% { transform: translateX(200%) skewX(-20deg); }
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-20deg);
+  }
 }
 
 @keyframes slideInUnderline {
-  0% { width: 0; }
-  100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes blobPulse {
-  0%, 100% { border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; }
-  50% { border-radius: 40% 60% 30% 70% / 60% 40% 70% 50%; }
+  0%,
+  100% {
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%;
+  }
+  50% {
+    border-radius: 40% 60% 30% 70% / 60% 40% 70% 50%;
+  }
 }
 
 @keyframes ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* ─── Animate on Scroll ─── */
@@ -115,10 +149,13 @@ body {
 
 /* ─── Card hover ─── */
 .service-card {
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   background: var(--color-surface);
   border-radius: var(--radius-card);
-  transition: border-color 0.25s ease, transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease;
 }
 .service-card:hover {
   border-color: var(--color-accent);
@@ -166,10 +203,19 @@ body {
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--color-bg); }
-::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 2px; }
-::-webkit-scrollbar-thumb:hover { background: var(--color-accent); }
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
 
 /* ─── Booking modal ─── */
 .modal-backdrop {
@@ -192,7 +238,9 @@ body {
   letter-spacing: 0.08em;
   padding: 4px 10px;
   border-radius: var(--radius-pill);
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
   cursor: pointer;
 }
 .lang-btn.active {
@@ -214,7 +262,7 @@ body {
   font-weight: 500;
   padding: 8px 20px;
   border-radius: var(--radius-pill);
-  border: 1.5px solid rgba(0,0,0,0.08);
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
   transition: all 0.2s ease;
   cursor: pointer;
   background: transparent;
@@ -234,9 +282,12 @@ body {
 /* ─── Article card ─── */
 .article-card {
   background: var(--color-surface);
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: var(--radius-card);
-  transition: border-color 0.2s ease, transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s ease;
+  transition:
+    border-color 0.2s ease,
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease;
 }
 .article-card:hover {
   border-color: var(--color-accent);
@@ -250,7 +301,9 @@ body {
   height: 8px;
   border-radius: 50%;
   background: rgba(232, 168, 124, 0.25);
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 .step-dot.active {
   background: var(--color-accent);
@@ -266,7 +319,7 @@ body {
   border-radius: var(--radius-pill);
   font-size: 13px;
   font-weight: 500;
-  border: 1.5px solid rgba(0,0,0,0.08);
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.2s ease;
   background: var(--color-surface);
@@ -291,12 +344,14 @@ body {
 /* ─── Dark section ─── */
 .dark-section {
   background: var(--color-dark);
-  color: #FFFDF5;
+  color: #fffdf5;
 }
 
 /* ─── Reduced motion ─── */
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+  *,
+  ::before,
+  ::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }

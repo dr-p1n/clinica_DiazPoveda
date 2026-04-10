@@ -33,11 +33,11 @@ const AppLogo = memo(function AppLogo({
     <div className={containerClassName} onClick={onClick}>
       {/* Show image if src provided, otherwise show icon */}
       {src ? (
-        <AppImage 
-          src={src} 
-          alt="Logo" 
-          width={size} 
-          height={size} 
+        <AppImage
+          src={src}
+          alt="Logo"
+          width={size}
+          height={size}
           className="flex-shrink-0"
           priority={true}
           unoptimized={src.endsWith('.svg')}

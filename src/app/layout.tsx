@@ -8,12 +8,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Next.js with Tailwind CSS',
-  description: 'A boilerplate project with Next.js and Tailwind CSS',
+  title: 'Dra. Ana Laura Diaz — Terapia IV · Panamá',
+  description:
+    'Sesiones personalizadas de terapia intravenosa administradas por médico certificado en Panamá. Hidratación, vitaminas, recuperación y fórmulas personalizadas.',
+  metadataBase: new URL('https://dranalauradiaz.com'),
   icons: {
-    icon: [
-      { url: '/assets/images/app_logo.png', type: 'image/x-icon' }
-    ],
+    icon: [{ url: '/assets/images/app_logo.png', type: 'image/x-icon' }],
   },
 };
 
@@ -23,9 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}
-</body>
+    <html lang="es">
+      <body>{children}</body>
     </html>
   );
 }

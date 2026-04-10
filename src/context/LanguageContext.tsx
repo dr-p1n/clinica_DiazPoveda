@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
-import esTranslations from "@/locales/es.json";
-import enTranslations from "@/locales/en.json";
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import esTranslations from '@/locales/es.json';
+import enTranslations from '@/locales/en.json';
 
-type Lang = "es" | "en";
+type Lang = 'es' | 'en';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Translations = Record<string, any>;
@@ -23,32 +23,30 @@ const translations: Record<Lang, Translations> = {
 };
 
 const LanguageContext = createContext<LanguageContextType>({
-  lang: "es",
+  lang: 'es',
   setLang: () => {},
   t: (key) => key,
   tObj: (key) => key,
 });
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("es");
+  const [lang, setLangState] = useState<Lang>('es');
 
   useEffect(() => {
-    const saved = localStorage.getItem("medclinic_lang") as Lang | null;
-    if (saved === "es" || saved === "en") {
-      setLangState(saved);
-    }
+    const browserLang = navigator.language || navigator.languages?.[0] || 'es';
+    const detected: Lang = browserLang.toLowerCase().startsWith('es') ? 'es' : 'en';
+    setLangState(detected);
   }, []);
 
   const setLang = useCallback((newLang: Lang) => {
     setLangState(newLang);
-    localStorage.setItem("medclinic_lang", newLang);
   }, []);
 
   // Dot-notation key resolver: "nav.book" → translations[lang]["nav"]["book"]
   const resolve = useCallback(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (key: string): any => {
-      const parts = key.split(".");
+      const parts = key.split('.');
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       let current: any = translations[lang];
       for (const part of parts) {
@@ -63,7 +61,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const t = useCallback(
     (key: string): string => {
       const val = resolve(key);
-      return typeof val === "string" ? val : key;
+      return typeof val === 'string' ? val : key;
     },
     [resolve]
   );
