@@ -35,7 +35,7 @@ export default function Header() {
         >
           {/* Logo */}
           <Link href="/iv-therapy-services" className="flex items-center gap-2">
-            <AppLogo size={48} text="Dra. Ana Laura Diaz" iconName="HeartIcon" />
+            <AppLogo src="/assets/images/app_logo.svg" size={48} />
           </Link>
 
           {/* Desktop Nav */}
