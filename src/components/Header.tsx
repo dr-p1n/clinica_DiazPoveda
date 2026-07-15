@@ -29,107 +29,121 @@ export default function Header() {
           borderBottom: '1px solid rgba(0,0,0,0.06)',
         }}
       >
-        <div
-          className="mx-auto flex items-center justify-between px-6 py-4"
-          style={{ maxWidth: '1100px' }}
-        >
-          {/* Logo */}
-          <Link href="/iv-therapy-services" className="flex flex-col min-w-0 flex-shrink">
-            <Image
-              src="/assets/images/app_logo.svg"
-              alt="Dra. Ana Laura Díaz Poveda"
-              width={430}
-              height={80}
-              unoptimized
-              priority
-              style={{ width: '100%', height: 'auto', maxWidth: '320px' }}
-            />
-            <div
-              className="flex flex-col"
-              style={{
-                paddingLeft: '24%',
-                marginTop: '2px',
-                fontFamily: 'Arial, Helvetica, sans-serif',
-                color: '#666666',
-                lineHeight: '1.5',
-              }}
-            >
-              <span className="text-[9px] md:text-[11.5px]">
-                Consultorios Punta Pacífica. Piso 8. #820
-              </span>
-              <span className="text-[9px] md:text-[11.5px]">
-                +507 6612-2773 | dranalauradiaz@gmail.com
-              </span>
-            </div>
-          </Link>
-
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`nav-link text-sm font-medium transition-colors ${
-                  pathname === link.href
-                    ? 'text-text-main active'
-                    : 'text-muted hover:text-text-main'
-                }`}
-                style={{ fontFamily: 'var(--font-body)' }}
+        <div className="mx-auto" style={{ maxWidth: '1100px' }}>
+          <div className="flex items-center justify-between px-6 pt-3 pb-1">
+            {/* Logo */}
+            <Link href="/iv-therapy-services" className="flex flex-col min-w-0 flex-shrink">
+              <Image
+                src="/assets/images/app_logo.svg"
+                alt="Dra. Ana Laura Díaz Poveda"
+                width={430}
+                height={80}
+                unoptimized
+                priority
+                style={{ width: '100%', height: 'auto', maxWidth: '320px' }}
+              />
+              {/* Contact info: mobile only */}
+              <div
+                className="flex flex-col md:hidden"
+                style={{
+                  paddingLeft: '24%',
+                  marginTop: '2px',
+                  fontFamily: 'Arial, Helvetica, sans-serif',
+                  fontSize: '9px',
+                  color: '#666666',
+                  lineHeight: '1.5',
+                }}
               >
-                {t(link.labelKey)}
-              </Link>
-            ))}
-          </nav>
+                <span>Consultorios Punta Pacífica. Piso 8. #820</span>
+                <span>+507 6612-2773 | dranalauradiaz@gmail.com</span>
+              </div>
+            </Link>
 
-          {/* Right: CTA */}
-          <div className="hidden md:flex items-center gap-3">
-            {/* Language toggle */}
-            <button
-              onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
-              className="text-sm font-medium px-3 py-1.5 rounded-full transition-all"
-              style={{
-                border: '1.5px solid rgba(0,0,0,0.12)',
-                color: 'var(--color-muted)',
-                fontFamily: 'var(--font-body)',
-                letterSpacing: '0.05em',
-              }}
-            >
-              {lang === 'es' ? 'EN' : 'ES'}
-            </button>
+            {/* Desktop Nav */}
+            <nav className="hidden md:flex items-center gap-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`nav-link text-sm font-medium transition-colors ${
+                    pathname === link.href
+                      ? 'text-text-main active'
+                      : 'text-muted hover:text-text-main'
+                  }`}
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  {t(link.labelKey)}
+                </Link>
+              ))}
+            </nav>
 
-            {/* Book CTA */}
+            {/* Right: CTA */}
+            <div className="hidden md:flex items-center gap-3">
+              {/* Language toggle */}
+              <button
+                onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
+                className="text-sm font-medium px-3 py-1.5 rounded-full transition-all"
+                style={{
+                  border: '1.5px solid rgba(0,0,0,0.12)',
+                  color: 'var(--color-muted)',
+                  fontFamily: 'var(--font-body)',
+                  letterSpacing: '0.05em',
+                }}
+              >
+                {lang === 'es' ? 'EN' : 'ES'}
+              </button>
+
+              {/* Book CTA */}
+              <button
+                onClick={() => setBookOpen(true)}
+                className="px-5 py-2.5 text-sm font-semibold text-white transition-all"
+                style={{
+                  background: 'var(--color-accent)',
+                  borderRadius: 'var(--radius-pill)',
+                  fontFamily: 'var(--font-body)',
+                  letterSpacing: '0.02em',
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.02)';
+                  (e.currentTarget as HTMLButtonElement).style.background = '#d4926a';
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)';
+                  (e.currentTarget as HTMLButtonElement).style.background = 'var(--color-accent)';
+                }}
+              >
+                {t('nav.book')}
+              </button>
+            </div>
+
+            {/* Mobile hamburger */}
             <button
-              onClick={() => setBookOpen(true)}
-              className="px-5 py-2.5 text-sm font-semibold text-white transition-all"
-              style={{
-                background: 'var(--color-accent)',
-                borderRadius: 'var(--radius-pill)',
-                fontFamily: 'var(--font-body)',
-                letterSpacing: '0.02em',
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.02)';
-                (e.currentTarget as HTMLButtonElement).style.background = '#d4926a';
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)';
-                (e.currentTarget as HTMLButtonElement).style.background = 'var(--color-accent)';
-              }}
+              className="md:hidden p-2 rounded-btn"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+              style={{ color: 'var(--color-text)' }}
             >
-              {t('nav.book')}
+              <Icon name={mobileOpen ? 'XMarkIcon' : 'Bars3Icon'} size={22} variant="outline" />
             </button>
           </div>
+          {/* end main flex row */}
 
-          {/* Mobile hamburger */}
-          <button
-            className="md:hidden p-2 rounded-btn"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-            style={{ color: 'var(--color-text)' }}
+          {/* Contact info row: desktop only — paddingLeft = px-6 (24px) + name offset (77px) */}
+          <div
+            className="hidden md:block pb-2"
+            style={{
+              paddingLeft: '101px',
+              fontFamily: 'Arial, Helvetica, sans-serif',
+              fontSize: '11.5px',
+              color: '#666666',
+              lineHeight: '1.5',
+            }}
           >
-            <Icon name={mobileOpen ? 'XMarkIcon' : 'Bars3Icon'} size={22} variant="outline" />
-          </button>
+            <div>Consultorios Punta Pacífica. Piso 8. #820</div>
+            <div>+507 6612-2773 | dranalauradiaz@gmail.com</div>
+          </div>
         </div>
+        {/* end maxWidth wrapper */}
 
         {/* Mobile Menu */}
         {mobileOpen && (
