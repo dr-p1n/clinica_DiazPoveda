@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import AppLogo from '@/components/ui/AppLogo';
+import AppImage from '@/components/ui/AppImage';
 import { useTranslation } from '@/context/LanguageContext';
 import Icon from '@/components/ui/AppIcon';
 
@@ -35,7 +35,7 @@ export default function Header() {
         >
           {/* Logo */}
           <Link href="/iv-therapy-services" className="flex items-center gap-2">
-            <AppLogo src="/assets/images/app_logo.svg" size={48} />
+            <AppImage src="/assets/images/app_logo.svg" alt="Dra. Ana Laura Díaz Poveda" width={310} height={65} unoptimized priority />
           </Link>
 
           {/* Desktop Nav */}
