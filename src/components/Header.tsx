@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import AppImage from '@/components/ui/AppImage';
+import Image from 'next/image';
 import { useTranslation } from '@/context/LanguageContext';
 import Icon from '@/components/ui/AppIcon';
 
@@ -35,7 +35,15 @@ export default function Header() {
         >
           {/* Logo */}
           <Link href="/iv-therapy-services" className="flex items-center gap-2">
-            <img src="/assets/images/app_logo.svg" alt="Dra. Ana Laura Díaz Poveda" style={{ width: '285px', height: '60px' }} />
+            <Image
+              src="/assets/images/app_logo.svg"
+              alt="Dra. Ana Laura Díaz Poveda"
+              width={285}
+              height={60}
+              unoptimized
+              priority
+              style={{ width: '285px', height: '60px' }}
+            />
           </Link>
 
           {/* Desktop Nav */}
