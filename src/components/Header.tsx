@@ -34,15 +34,15 @@ export default function Header() {
           style={{ maxWidth: '1100px' }}
         >
           {/* Logo */}
-          <Link href="/iv-therapy-services" className="flex items-center gap-2">
+          <Link href="/iv-therapy-services" className="flex items-center min-w-0 flex-shrink">
             <Image
               src="/assets/images/app_logo.svg"
               alt="Dra. Ana Laura Díaz Poveda"
-              width={360}
-              height={76}
+              width={430}
+              height={80}
               unoptimized
               priority
-              style={{ width: '360px', height: '76px' }}
+              style={{ width: '100%', height: 'auto', maxWidth: '320px' }}
             />
           </Link>
 
