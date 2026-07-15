@@ -38,11 +38,11 @@ export default function Header() {
             <Image
               src="/assets/images/app_logo.svg"
               alt="Dra. Ana Laura Díaz Poveda"
-              width={285}
-              height={60}
+              width={360}
+              height={76}
               unoptimized
               priority
-              style={{ width: '285px', height: '60px' }}
+              style={{ width: '360px', height: '76px' }}
             />
           </Link>
 
