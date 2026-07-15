@@ -45,18 +45,21 @@ export default function Header() {
               style={{ width: '100%', height: 'auto', maxWidth: '320px' }}
             />
             <div
-              className="hidden md:flex flex-col"
+              className="flex flex-col"
               style={{
                 paddingLeft: '24%',
                 marginTop: '2px',
                 fontFamily: 'Arial, Helvetica, sans-serif',
-                fontSize: '11.5px',
                 color: '#666666',
                 lineHeight: '1.5',
               }}
             >
-              <span>Consultorios Punta Pacífica. Piso 8. #820</span>
-              <span>+507 6612-2773 | dranalauradiaz@gmail.com</span>
+              <span className="text-[9px] md:text-[11.5px]">
+                Consultorios Punta Pacífica. Piso 8. #820
+              </span>
+              <span className="text-[9px] md:text-[11.5px]">
+                +507 6612-2773 | dranalauradiaz@gmail.com
+              </span>
             </div>
           </Link>
 
