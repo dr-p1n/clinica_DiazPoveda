@@ -179,8 +179,8 @@ export default function IVTherapyInteractive() {
             >
               <div className="img-zoom rounded-card overflow-hidden" style={{ height: '480px' }}>
                 <AppImage
-                  src="https://img.rocket.new/generatedImages/rocket_gen_img_100bae3e9-1772672385694.png"
-                  alt="Nurse preparing IV therapy drip in a clean clinical room with warm lighting"
+                  src="/assets/images/foto-dra.jpg"
+                  alt="Dra. Ana Laura Díaz Poveda, Medicina General, Panamá"
                   width={600}
                   height={480}
                   className="w-full h-full object-cover"
