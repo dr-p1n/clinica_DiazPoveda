@@ -181,13 +181,14 @@ export default function IVTherapyInteractive() {
                 animation: 'animationIn 0.9s cubic-bezier(0.16,1,0.3,1) 0.4s both',
               }}
             >
-              <div className="img-zoom rounded-card overflow-hidden" style={{ height: '480px' }}>
+              <div className="img-zoom rounded-card overflow-hidden" style={{ height: '650px' }}>
                 <AppImage
                   src="/assets/images/foto-dra.jpg"
                   alt="Dra. Ana Laura Díaz Poveda, Medicina General, Panamá"
                   width={600}
-                  height={480}
-                  className="w-full h-full object-cover"
+                  height={650}
+                  className="w-full h-full"
+                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
                   priority
                 />
               </div>
