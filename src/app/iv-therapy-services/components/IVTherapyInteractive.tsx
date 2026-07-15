@@ -6,7 +6,7 @@ import Icon from '@/components/ui/AppIcon';
 import { useTranslation } from '@/context/LanguageContext';
 
 export default function IVTherapyInteractive() {
-  const { t, tObj } = useTranslation();
+  const { t, tObj, lang } = useTranslation();
   const [bookOpen, setBookOpen] = useState(false);
   const animRefs = useRef<HTMLElement[]>([]);
 
@@ -96,7 +96,7 @@ export default function IVTherapyInteractive() {
                   animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both',
                 }}
               >
-                {[t('iv_hero.badge1'), t('iv_hero.badge2'), t('iv_hero.badge3')].map((badge) => (
+                {[t('iv_hero.badge1'), t('iv_hero.badge2'), t('iv_hero.badge3')].map((badge, i) => (
                   <span
                     key={badge}
                     className="text-xs font-semibold uppercase px-3 py-1.5 rounded-pill float-anim"
@@ -105,7 +105,7 @@ export default function IVTherapyInteractive() {
                       color: 'var(--color-text)',
                       letterSpacing: '0.08em',
                       fontFamily: 'var(--font-body)',
-                      animationDelay: `${Math.random() * 1}s`,
+                      animationDelay: `${0.1 + i * 0.15}s`,
                     }}
                   >
                     {badge}
@@ -216,7 +216,7 @@ export default function IVTherapyInteractive() {
                     fontFamily: 'var(--font-body)',
                   }}
                 >
-                  {t('lang') === 'en' ? 'Patient satisfaction' : 'Satisfacción de pacientes'}
+                  {lang === 'en' ? 'Patient satisfaction' : 'Satisfacción de pacientes'}
                 </p>
               </div>
 
