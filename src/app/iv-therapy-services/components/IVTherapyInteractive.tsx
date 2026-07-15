@@ -86,12 +86,12 @@ export default function IVTherapyInteractive() {
         />
 
         <div className="mx-auto px-6 w-full relative z-10" style={{ maxWidth: '1100px' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-center py-4 lg:py-10">
             {/* Left: text */}
-            <div>
+            <div className="order-2 lg:order-1">
               {/* Floating trust badges */}
               <div
-                className="flex flex-wrap justify-center gap-2 mb-8 animate-on-scroll"
+                className="flex flex-wrap justify-center gap-2 mb-4 lg:mb-8 animate-on-scroll"
                 style={{
                   animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both',
                 }}
@@ -114,9 +114,9 @@ export default function IVTherapyInteractive() {
               </div>
 
               <h1
-                className="font-display mb-6 leading-tight"
+                className="font-display mb-3 lg:mb-6 leading-tight"
                 style={{
-                  fontSize: 'clamp(48px, 6vw, 72px)',
+                  fontSize: 'clamp(32px, 8vw, 72px)',
                   fontWeight: 300,
                   color: 'var(--color-text)',
                   animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.2s both',
@@ -134,9 +134,9 @@ export default function IVTherapyInteractive() {
               </h1>
 
               <p
-                className="mb-10 leading-relaxed"
+                className="mb-5 lg:mb-10 leading-relaxed"
                 style={{
-                  fontSize: '18px',
+                  fontSize: 'clamp(14px, 4vw, 18px)',
                   color: 'var(--color-muted)',
                   fontFamily: 'var(--font-body)',
                   animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.35s both',
@@ -176,12 +176,12 @@ export default function IVTherapyInteractive() {
 
             {/* Right: image with floating card */}
             <div
-              className="relative block"
+              className="relative order-1 lg:order-2"
               style={{
                 animation: 'animationIn 0.9s cubic-bezier(0.16,1,0.3,1) 0.4s both',
               }}
             >
-              <div className="img-zoom rounded-card overflow-hidden" style={{ height: 'clamp(320px, 50vw, 650px)' }}>
+              <div className="img-zoom rounded-card overflow-hidden" style={{ height: 'clamp(260px, 45vw, 650px)' }}>
                 <AppImage
                   src="/assets/images/foto-dra.jpg"
                   alt="Dra. Ana Laura Díaz Poveda, Medicina General, Panamá"
