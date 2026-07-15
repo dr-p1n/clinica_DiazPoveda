@@ -91,7 +91,7 @@ export default function IVTherapyInteractive() {
             <div>
               {/* Floating trust badges */}
               <div
-                className="flex flex-wrap gap-2 mb-8 animate-on-scroll"
+                className="flex flex-wrap justify-center gap-2 mb-8 animate-on-scroll"
                 style={{
                   animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both',
                 }}
