@@ -33,13 +33,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('es');
 
   useEffect(() => {
-    const browserLang = navigator.language || navigator.languages?.[0] || 'es';
-    const detected: Lang = browserLang.toLowerCase().startsWith('es') ? 'es' : 'en';
-    setLangState(detected);
+    const saved = localStorage.getItem('lang') as Lang | null;
+    if (saved === 'es' || saved === 'en') {
+      setLangState(saved);
+    }
   }, []);
 
   const setLang = useCallback((newLang: Lang) => {
     setLangState(newLang);
+    localStorage.setItem('lang', newLang);
   }, []);
 
   // Dot-notation key resolver: "nav.book" → translations[lang]["nav"]["book"]
