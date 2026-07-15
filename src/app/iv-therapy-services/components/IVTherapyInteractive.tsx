@@ -122,11 +122,15 @@ export default function IVTherapyInteractive() {
                   animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.2s both',
                 }}
               >
-                {t('iv_hero.headline').split(', ').map((part, i, arr) => (
-                  <span key={i}>
-                    {part}{i < arr.length - 1 ? ',' : ''}<br />
-                  </span>
-                ))}
+                {t('iv_hero.headline')
+                  .split(', ')
+                  .map((part, i, arr) => (
+                    <span key={i}>
+                      {part}
+                      {i < arr.length - 1 ? ',' : ''}
+                      <br />
+                    </span>
+                  ))}
               </h1>
 
               <p
@@ -291,7 +295,6 @@ export default function IVTherapyInteractive() {
                     {svc.desc}
                   </p>
                 </div>
-
               </div>
             ))}
           </div>
