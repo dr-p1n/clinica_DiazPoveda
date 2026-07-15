@@ -48,10 +48,10 @@ export default function IVTherapyInteractive() {
   const trustItems = tObj('trust.items') as string[];
 
   const serviceIcons: Record<string, string> = {
-    hydration: 'BeakerIcon',
-    vitamin: 'SparklesIcon',
-    recovery: 'BoltIcon',
-    custom: 'AdjustmentsHorizontalIcon',
+    general: 'HeartIcon',
+    certificates: 'DocumentTextIcon',
+    chronic: 'ClipboardDocumentListIcon',
+    labs: 'BeakerIcon',
   };
 
   return (
@@ -61,7 +61,7 @@ export default function IVTherapyInteractive() {
         className="relative min-h-screen flex items-center overflow-hidden"
         style={{
           background: 'var(--color-bg)',
-          paddingTop: '100px',
+          paddingTop: '80px',
         }}
       >
         {/* Decorative blob */}
@@ -86,7 +86,7 @@ export default function IVTherapyInteractive() {
         />
 
         <div className="mx-auto px-6 w-full relative z-10" style={{ maxWidth: '1100px' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-10">
             {/* Left: text */}
             <div>
               {/* Floating trust badges */}
@@ -254,34 +254,6 @@ export default function IVTherapyInteractive() {
         }}
       >
         <div className="mx-auto px-6" style={{ maxWidth: '1100px' }}>
-          <div
-            className="mb-16 animate-on-scroll"
-            style={{
-              animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) both',
-            }}
-          >
-            <p
-              className="text-xs font-semibold uppercase mb-3"
-              style={{
-                color: 'var(--color-muted)',
-                letterSpacing: '0.12em',
-                fontFamily: 'var(--font-body)',
-              }}
-            >
-              {t('iv_services.subtitle')}
-            </p>
-            <h2
-              className="font-display"
-              style={{
-                fontSize: 'clamp(36px, 4vw, 52px)',
-                fontWeight: 300,
-                color: 'var(--color-text)',
-              }}
-            >
-              {t('iv_services.title')}
-            </h2>
-          </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((svc, i) => (
               <div
@@ -307,11 +279,7 @@ export default function IVTherapyInteractive() {
                 <div className="flex-1">
                   <h3
                     className="font-display mb-2"
-                    style={{
-                      fontSize: '20px',
-                      fontWeight: 400,
-                      color: 'var(--color-text)',
-                    }}
+                    style={{ fontSize: '20px', fontWeight: 400, color: 'var(--color-text)' }}
                   >
                     {svc.name}
                   </h3>
@@ -320,38 +288,27 @@ export default function IVTherapyInteractive() {
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between pt-2">
-                  <div>
-                    <p
-                      className="text-xs uppercase"
-                      style={{
-                        color: 'var(--color-muted)',
-                        letterSpacing: '0.08em',
-                      }}
-                    >
-                      {t('iv_services.from')}
-                    </p>
+                {/* Only show price + duration on the first service */}
+                {svc.id === 'general' && (
+                  <div className="flex items-center justify-between pt-2">
                     <p
                       className="font-display text-2xl"
-                      style={{
-                        color: 'var(--color-accent)',
-                        fontWeight: 400,
-                      }}
+                      style={{ color: 'var(--color-accent)', fontWeight: 400 }}
                     >
                       {svc.price}
                     </p>
+                    <span
+                      className="text-xs px-3 py-1 rounded-pill"
+                      style={{
+                        background: 'rgba(245,233,160,0.5)',
+                        color: 'var(--color-text)',
+                        fontFamily: 'var(--font-body)',
+                      }}
+                    >
+                      {svc.duration}
+                    </span>
                   </div>
-                  <span
-                    className="text-xs px-3 py-1 rounded-pill"
-                    style={{
-                      background: 'rgba(245,233,160,0.5)',
-                      color: 'var(--color-text)',
-                      fontFamily: 'var(--font-body)',
-                    }}
-                  >
-                    {svc.duration}
-                  </span>
-                </div>
+                )}
               </div>
             ))}
           </div>

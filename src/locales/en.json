@@ -21,10 +21,10 @@
   "services": [
     {
       "id": "general",
-      "name": "General Medical Consultation",
+      "name": "General Medicine Consultation",
       "desc": "Full clinical evaluation, diagnosis, and treatment plan. Includes prescriptions and medical guidance.",
       "price": "$60",
-      "duration": "30 min"
+      "duration": "60 min"
     },
     {
       "id": "certificates",
