@@ -1,31 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 130" width="620" height="130">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 80" width="380" height="80">
 
   <!-- AD monogram -->
-  <text x="8" y="88" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="82" fill="#C8653A">A</text>
-  <text x="60" y="88" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="82" fill="#C8653A">D</text>
+  <text x="4" y="62" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="64" fill="#C8653A">A</text>
+  <text x="46" y="62" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="64" fill="#C8653A">D</text>
 
   <!-- Stethoscope tube -->
-  <path d="M 111,66 Q 118,90 103,102 Q 84,114 60,103 Q 47,96 41,89"
-        fill="none" stroke="#C8653A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 86,50 Q 92,68 80,76 Q 65,84 46,76 Q 36,70 31,65"
+        fill="none" stroke="#C8653A" stroke-width="4" stroke-linecap="round"/>
 
   <!-- Stethoscope head -->
-  <circle cx="34" cy="94" r="9" fill="none" stroke="#C8653A" stroke-width="4.5"/>
-  <circle cx="34" cy="94" r="3.2" fill="#C8653A"/>
+  <circle cx="25" cy="68" r="7" fill="none" stroke="#C8653A" stroke-width="3.5"/>
+  <circle cx="25" cy="68" r="2.5" fill="#C8653A"/>
 
   <!-- Vertical separator -->
-  <line x1="134" y1="18" x2="134" y2="112" stroke="#D4957A" stroke-width="1.2"/>
+  <line x1="104" y1="12" x2="104" y2="68" stroke="#D4957A" stroke-width="1"/>
 
   <!-- Doctor name -->
-  <text x="152" y="48" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="22" fill="#1a1a1a">Dra. Ana Laura Díaz Poveda</text>
+  <text x="118" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="17" fill="#1a1a1a">Dra. Ana Laura Díaz Poveda</text>
 
   <!-- MEDICINA GENERAL badge -->
-  <rect x="152" y="58" width="172" height="24" rx="12" fill="#D4845A"/>
-  <text x="238" y="75" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="2">MEDICINA GENERAL</text>
-
-  <!-- Address -->
-  <text x="152" y="100" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#C8653A">Consultorios Punta Pacífica. Piso 8. #820</text>
-
-  <!-- Phone and email -->
-  <text x="152" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#C8653A">+507 6612-2773 | dranalauradiaz@gmail.com</text>
+  <rect x="118" y="42" width="148" height="20" rx="10" fill="#D4845A"/>
+  <text x="192" y="56" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="9.5" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">MEDICINA GENERAL</text>
 
 </svg>
