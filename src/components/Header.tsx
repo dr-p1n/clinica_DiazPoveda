@@ -34,7 +34,7 @@ export default function Header() {
           style={{ maxWidth: '1100px' }}
         >
           {/* Logo */}
-          <Link href="/iv-therapy-services" className="flex items-center min-w-0 flex-shrink">
+          <Link href="/iv-therapy-services" className="flex flex-col min-w-0 flex-shrink">
             <Image
               src="/assets/images/app_logo.svg"
               alt="Dra. Ana Laura Díaz Poveda"
@@ -44,6 +44,20 @@ export default function Header() {
               priority
               style={{ width: '100%', height: 'auto', maxWidth: '320px' }}
             />
+            <div
+              className="hidden md:flex flex-col"
+              style={{
+                paddingLeft: '24%',
+                marginTop: '2px',
+                fontFamily: 'Arial, Helvetica, sans-serif',
+                fontSize: '11.5px',
+                color: '#666666',
+                lineHeight: '1.5',
+              }}
+            >
+              <span>Consultorios Punta Pacífica. Piso 8. #820</span>
+              <span>+507 6612-2773 | dranalauradiaz@gmail.com</span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
