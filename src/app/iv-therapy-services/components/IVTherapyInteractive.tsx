@@ -254,7 +254,7 @@ export default function IVTherapyInteractive() {
       <section
         style={{
           background: 'var(--color-bg)',
-          padding: 'var(--section-padding) 0',
+          padding: '48px 0 var(--section-padding)',
         }}
       >
         <div className="mx-auto px-6" style={{ maxWidth: '1100px' }}>
