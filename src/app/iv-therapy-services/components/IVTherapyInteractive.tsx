@@ -122,7 +122,11 @@ export default function IVTherapyInteractive() {
                   animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.2s both',
                 }}
               >
-                {t('iv_hero.headline')}
+                {t('iv_hero.headline').split(', ').map((part, i, arr) => (
+                  <span key={i}>
+                    {part}{i < arr.length - 1 ? ',' : ''}<br />
+                  </span>
+                ))}
               </h1>
 
               <p
@@ -288,27 +292,6 @@ export default function IVTherapyInteractive() {
                   </p>
                 </div>
 
-                {/* Only show price + duration on the first service */}
-                {svc.id === 'general' && (
-                  <div className="flex items-center justify-between pt-2">
-                    <p
-                      className="font-display text-2xl"
-                      style={{ color: 'var(--color-accent)', fontWeight: 400 }}
-                    >
-                      {svc.price}
-                    </p>
-                    <span
-                      className="text-xs px-3 py-1 rounded-pill"
-                      style={{
-                        background: 'rgba(245,233,160,0.5)',
-                        color: 'var(--color-text)',
-                        fontFamily: 'var(--font-body)',
-                      }}
-                    >
-                      {svc.duration}
-                    </span>
-                  </div>
-                )}
               </div>
             ))}
           </div>
