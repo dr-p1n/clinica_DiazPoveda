@@ -9,7 +9,7 @@ import Icon from '@/components/ui/AppIcon';
 
 export default function Header() {
   const pathname = usePathname();
-  const { t } = useTranslation();
+  const { t, lang, setLang } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [bookOpen, setBookOpen] = useState(false);
 
@@ -66,6 +66,20 @@ export default function Header() {
 
           {/* Right: CTA */}
           <div className="hidden md:flex items-center gap-3">
+            {/* Language toggle */}
+            <button
+              onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
+              className="text-sm font-medium px-3 py-1.5 rounded-full transition-all"
+              style={{
+                border: '1.5px solid rgba(0,0,0,0.12)',
+                color: 'var(--color-muted)',
+                fontFamily: 'var(--font-body)',
+                letterSpacing: '0.05em',
+              }}
+            >
+              {lang === 'es' ? 'EN' : 'ES'}
+            </button>
+
             {/* Book CTA */}
             <button
               onClick={() => setBookOpen(true)}
@@ -119,6 +133,15 @@ export default function Header() {
                 {t(link.labelKey)}
               </Link>
             ))}
+
+            {/* Mobile language toggle */}
+            <button
+              onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
+              className="text-sm font-medium py-2"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              {lang === 'es' ? '🌐 English' : '🌐 Español'}
+            </button>
 
             {/* Mobile book */}
             <div className="flex items-center gap-3 pt-2">
