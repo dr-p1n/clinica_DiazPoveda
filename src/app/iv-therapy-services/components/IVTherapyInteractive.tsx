@@ -176,12 +176,12 @@ export default function IVTherapyInteractive() {
 
             {/* Right: image with floating card */}
             <div
-              className="relative hidden lg:block"
+              className="relative block"
               style={{
                 animation: 'animationIn 0.9s cubic-bezier(0.16,1,0.3,1) 0.4s both',
               }}
             >
-              <div className="img-zoom rounded-card overflow-hidden" style={{ height: '650px' }}>
+              <div className="img-zoom rounded-card overflow-hidden" style={{ height: 'clamp(320px, 50vw, 650px)' }}>
                 <AppImage
                   src="/assets/images/foto-dra.jpg"
                   alt="Dra. Ana Laura Díaz Poveda, Medicina General, Panamá"
