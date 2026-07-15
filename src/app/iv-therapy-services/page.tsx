@@ -5,15 +5,15 @@ import IVTherapyInteractive from './components/IVTherapyInteractive';
 import { LanguageProvider } from '@/context/LanguageContext';
 
 export const metadata: Metadata = {
-  title: 'Terapia IV · Dra. Ana Laura Diaz',
+  title: 'Consultas · Dra. Ana Laura Díaz Poveda',
   description:
-    'Sesiones personalizadas de terapia intravenosa administradas por médico certificado en Panamá. Hidratación, vitaminas, recuperación y fórmulas personalizadas.',
+    'Consultas de Medicina General en Panamá con la Dra. Ana Laura Díaz Poveda. Certificados médicos, seguimiento de enfermedades crónicas, revisión de laboratorios y más. $60 por consulta.',
   keywords: [
-    'terapia IV',
-    'IV therapy',
-    'hidratación intravenosa',
-    'Panamá',
-    'Dra. Ana Laura Diaz',
+    'consulta médica Panamá',
+    'medicina general Panamá',
+    'certificado de salud',
+    'Dra. Ana Laura Díaz',
+    'médico Punta Pacífica',
   ],
 };
 

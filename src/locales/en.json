@@ -1,51 +1,51 @@
 {
   "nav": {
-    "iv": "IV Therapy",
+    "iv": "Consultations",
     "medtech": "DOCTI",
     "education": "Educational Resources",
     "book": "Book a session"
   },
   "iv_hero": {
-    "headline": "Rehydrate. Recover. Restore.",
-    "subline": "Personalized IV therapy sessions in a calm, clinical environment.",
-    "cta": "Book your session",
-    "badge1": "Physician-administered",
-    "badge2": "Private setting",
-    "badge3": "30\u201360 min"
+    "headline": "Your health, in expert hands.",
+    "subline": "General Medicine consultations in a private and warm setting. Personalized care with Dr. Ana Laura D\u00edaz Poveda.",
+    "cta": "Book your consultation",
+    "badge1": "Certified physician",
+    "badge2": "Private care",
+    "badge3": "$60 per visit"
   },
   "iv_services": {
-    "title": "Our Services",
-    "subtitle": "Formulations designed for your specific needs",
-    "from": "From"
+    "title": "What does your consultation include?",
+    "subtitle": "One fee, complete care",
+    "from": ""
   },
   "services": [
     {
-      "id": "hydration",
-      "name": "Total Hydration",
-      "desc": "Restore fluid balance with essential electrolytes and vitamin C.",
-      "price": "$80",
+      "id": "general",
+      "name": "General Medical Consultation",
+      "desc": "Full clinical evaluation, diagnosis, and treatment plan. Includes prescriptions and medical guidance.",
+      "price": "$60",
       "duration": "30 min"
     },
     {
-      "id": "vitamin",
-      "name": "Vitamin Infusion",
-      "desc": "B complex + zinc + magnesium for sustained energy and general wellbeing.",
-      "price": "$110",
-      "duration": "45 min"
+      "id": "certificates",
+      "name": "Medical Certificates",
+      "desc": "Certificate of good physical health or medical leave certificate for work or school.",
+      "price": "$60",
+      "duration": "20 min"
     },
     {
-      "id": "recovery",
-      "name": "Recovery Drip",
-      "desc": "Anti-inflammatory, IV analgesic and fluids for post-exertion recovery.",
-      "price": "$130",
-      "duration": "60 min"
+      "id": "chronic",
+      "name": "Chronic Disease Follow-up",
+      "desc": "Monitoring and treatment adjustment for hypertension, diabetes, dyslipidemia, and other chronic conditions.",
+      "price": "$60",
+      "duration": "30 min"
     },
     {
-      "id": "custom",
-      "name": "Custom Formula",
-      "desc": "Designed with you in a prior consultation based on your health goals.",
-      "price": "$150+",
-      "duration": "60 min"
+      "id": "labs",
+      "name": "Lab Results Review",
+      "desc": "Interpretation of results, guidance on findings, and specialist referrals when needed.",
+      "price": "$60",
+      "duration": "20 min"
     }
   ],
   "how_it_works": {
@@ -54,31 +54,31 @@
       {
         "num": "01",
         "label": "Book",
-        "desc": "Select your service and choose an available time slot."
+        "desc": "Select your consultation type and choose an available time slot."
       },
       {
         "num": "02",
-        "label": "Consult",
-        "desc": "Brief medical evaluation before starting the session."
+        "label": "Evaluation",
+        "desc": "Full medical history and personalized clinical evaluation."
       },
       {
         "num": "03",
-        "label": "Session",
-        "desc": "Relax while you receive your drip in a private space."
+        "label": "Plan",
+        "desc": "Receive your diagnosis, prescription, certificate, or specialist referral."
       }
     ]
   },
   "trust": {
     "items": [
-      "Physician-certified administration",
-      "100% private setting",
-      "30\u201360 min sessions",
-      "No long waiting lists"
+      "General Medicine specialist",
+      "Private and confidential care",
+      "No long waiting lists",
+      "Acute and chronic symptom management"
     ]
   },
   "cta_block": {
-    "headline": "Ready to feel better?",
-    "sub": "Book your IV therapy session today.",
+    "headline": "Need to see a doctor?",
+    "sub": "Book your consultation today. Same-day appointments subject to availability.",
     "btn": "Reserve now"
   },
   "booking": {

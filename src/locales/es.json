@@ -1,51 +1,51 @@
 {
   "nav": {
-    "iv": "Terapia IV",
+    "iv": "Consultas",
     "medtech": "DOCTI",
     "education": "Recursos Educativos",
     "book": "Agendar cita"
   },
   "iv_hero": {
-    "headline": "Rehidrata. Recupera. Restaura.",
-    "subline": "Sesiones de terapia IV personalizadas en un ambiente cl\u00ednico y tranquilo.",
-    "cta": "Agenda tu sesi\u00f3n",
+    "headline": "Tu salud, en manos expertas.",
+    "subline": "Consultas de Medicina General en un ambiente privado y c\u00e1lido. Atenci\u00f3n personalizada con la Dra. Ana Laura D\u00edaz Poveda.",
+    "cta": "Agenda tu consulta",
     "badge1": "M\u00e9dico certificado",
-    "badge2": "Ambiente privado",
-    "badge3": "30\u201360 min"
+    "badge2": "Atenci\u00f3n privada",
+    "badge3": "$60 por consulta"
   },
   "iv_services": {
-    "title": "Nuestros Servicios",
-    "subtitle": "Formulaciones dise\u00f1adas para tus necesidades espec\u00edficas",
-    "from": "Desde"
+    "title": "\u00bfQu\u00e9 incluye tu consulta?",
+    "subtitle": "Una sola tarifa, atenci\u00f3n completa",
+    "from": ""
   },
   "services": [
     {
-      "id": "hydration",
-      "name": "Hidrataci\u00f3n Total",
-      "desc": "Recupera el balance h\u00eddrico con electrolitos esenciales y vitamina C.",
-      "price": "$80",
+      "id": "general",
+      "name": "Consulta M\u00e9dica General",
+      "desc": "Evaluaci\u00f3n cl\u00ednica completa, diagn\u00f3stico y plan de tratamiento. Incluye recetas y orientaci\u00f3n m\u00e9dica.",
+      "price": "$60",
       "duration": "30 min"
     },
     {
-      "id": "vitamin",
-      "name": "Infusi\u00f3n de Vitaminas",
-      "desc": "Complejo B + zinc + magnesio para energ\u00eda sostenida y bienestar general.",
-      "price": "$110",
-      "duration": "45 min"
+      "id": "certificates",
+      "name": "Certificados M\u00e9dicos",
+      "desc": "Certificado de buena salud f\u00edsica o certificado de incapacidad laboral o escolar.",
+      "price": "$60",
+      "duration": "20 min"
     },
     {
-      "id": "recovery",
-      "name": "Gotero de Recuperaci\u00f3n",
-      "desc": "Anti-inflamatorio, analg\u00e9sico IV y fluidos para recuperaci\u00f3n post-esfuerzo.",
-      "price": "$130",
-      "duration": "60 min"
+      "id": "chronic",
+      "name": "Seguimiento de Enfermedades Cr\u00f3nicas",
+      "desc": "Control y ajuste de tratamiento para hipertensi\u00f3n, diabetes, dislipidemia y otras condiciones cr\u00f3nicas.",
+      "price": "$60",
+      "duration": "30 min"
     },
     {
-      "id": "custom",
-      "name": "F\u00f3rmula Personalizada",
-      "desc": "Dise\u00f1ada contigo en consulta previa seg\u00fan tus objetivos de salud.",
-      "price": "$150+",
-      "duration": "60 min"
+      "id": "labs",
+      "name": "Revisi\u00f3n de Laboratorios",
+      "desc": "Interpretaci\u00f3n de resultados, orientaci\u00f3n sobre hallazgos y referencias a especialistas si es necesario.",
+      "price": "$60",
+      "duration": "20 min"
     }
   ],
   "how_it_works": {
@@ -54,31 +54,31 @@
       {
         "num": "01",
         "label": "Agenda",
-        "desc": "Selecciona tu servicio y elige un horario disponible."
+        "desc": "Selecciona el tipo de consulta y elige tu horario disponible."
       },
       {
         "num": "02",
-        "label": "Consulta",
-        "desc": "Breve evaluaci\u00f3n m\u00e9dica antes de iniciar la sesi\u00f3n."
+        "label": "Evaluaci\u00f3n",
+        "desc": "Historia cl\u00ednica y evaluaci\u00f3n m\u00e9dica completa y personalizada."
       },
       {
         "num": "03",
-        "label": "Sesi\u00f3n",
-        "desc": "Rel\u00e1jate mientras recibes tu gotero en un espacio privado."
+        "label": "Plan",
+        "desc": "Recibe tu diagn\u00f3stico, receta, certificado o referencia al especialista."
       }
     ]
   },
   "trust": {
     "items": [
-      "Administrado por m\u00e9dico certificado",
-      "Ambiente 100% privado",
-      "Sesiones de 30\u201360 min",
-      "Sin lista de espera larga"
+      "M\u00e9dico especialista en Medicina General",
+      "Atenci\u00f3n privada y confidencial",
+      "Sin lista de espera larga",
+      "Manejo de s\u00edntomas agudos y cr\u00f3nicos"
     ]
   },
   "cta_block": {
-    "headline": "\u00bfLista para sentirte mejor?",
-    "sub": "Agenda hoy tu sesi\u00f3n de terapia IV.",
+    "headline": "\u00bfNecesitas ver a un m\u00e9dico?",
+    "sub": "Agenda tu consulta hoy. Atenci\u00f3n el mismo d\u00eda sujeta a disponibilidad.",
     "btn": "Reservar ahora"
   },
   "booking": {
