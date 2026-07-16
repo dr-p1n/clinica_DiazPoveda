@@ -197,33 +197,6 @@ export default function IVTherapyInteractive() {
               </div>
 
               {/* Floating stats card */}
-              <div
-                className="absolute -bottom-6 -left-8 p-5 rounded-card float-anim"
-                style={{
-                  background: 'rgba(255,253,245,0.92)',
-                  backdropFilter: 'blur(12px)',
-                  border: '1px solid rgba(0,0,0,0.07)',
-                  boxShadow: '0 12px 40px rgba(0,0,0,0.08)',
-                  minWidth: '180px',
-                }}
-              >
-                <p
-                  className="text-3xl font-display font-medium"
-                  style={{ color: 'var(--color-text)' }}
-                >
-                  98%
-                </p>
-                <p
-                  className="text-xs mt-1"
-                  style={{
-                    color: 'var(--color-muted)',
-                    fontFamily: 'var(--font-body)',
-                  }}
-                >
-                  {lang === 'en' ? 'Patient satisfaction' : 'Satisfacción de pacientes'}
-                </p>
-              </div>
-
               {/* Floating badge top-right */}
               <div
                 className="absolute -top-4 -right-4 px-4 py-2 rounded-pill float-anim"
