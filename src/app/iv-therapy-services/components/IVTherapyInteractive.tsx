@@ -86,12 +86,35 @@ export default function IVTherapyInteractive() {
         />
 
         <div className="mx-auto px-6 w-full relative z-10" style={{ maxWidth: '1100px' }}>
-          <div className="grid grid-cols-2 gap-3 lg:gap-16 items-start lg:items-center pt-10 pb-4 lg:py-10">
+          {/* Badges: mobile only — grid-cols-2 forces 2+1 layout */}
+          <div
+            className="grid grid-cols-2 lg:hidden gap-1.5 mb-3 pt-10"
+            style={{ animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both' }}
+          >
+            {[t('iv_hero.badge1'), t('iv_hero.badge2'), t('iv_hero.badge3')].map((badge, i) => (
+              <span
+                key={badge}
+                className="font-semibold uppercase px-2 py-1 rounded-pill float-anim"
+                style={{
+                  background: 'var(--color-primary)',
+                  color: 'var(--color-text)',
+                  letterSpacing: '0.07em',
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '9px',
+                  animationDelay: `${0.1 + i * 0.15}s`,
+                }}
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 lg:gap-16 items-start lg:items-center pb-4 lg:pt-10 lg:py-10">
             {/* Left: text */}
             <div>
-              {/* Floating trust badges */}
+              {/* Floating trust badges — desktop only (mobile rendered above) */}
               <div
-                className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-1.5 lg:gap-2 mb-3 lg:mb-8"
+                className="hidden lg:flex flex-wrap justify-start gap-2 mb-8 animate-on-scroll"
                 style={{
                   animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both',
                 }}
@@ -99,7 +122,7 @@ export default function IVTherapyInteractive() {
                 {[t('iv_hero.badge1'), t('iv_hero.badge2'), t('iv_hero.badge3')].map((badge, i) => (
                   <span
                     key={badge}
-                    className="text-xs font-semibold uppercase px-3 py-1.5 rounded-pill float-anim self-start"
+                    className="text-xs font-semibold uppercase px-3 py-1.5 rounded-pill float-anim"
                     style={{
                       background: 'var(--color-primary)',
                       color: 'var(--color-text)',
