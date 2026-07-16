@@ -46,11 +46,11 @@ export default function Header() {
               <div
                 className="flex flex-col md:hidden"
                 style={{
-                  paddingLeft: '24%',
+                  paddingLeft: '27.5%',
                   marginTop: '2px',
                   fontFamily: 'Arial, Helvetica, sans-serif',
                   fontSize: '9px',
-                  color: '#666666',
+                  color: '#D4845A',
                   lineHeight: '1.5',
                 }}
               >
