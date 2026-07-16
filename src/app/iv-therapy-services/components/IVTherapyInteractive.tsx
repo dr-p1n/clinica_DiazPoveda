@@ -183,7 +183,7 @@ export default function IVTherapyInteractive() {
             >
               <div
                 className="img-zoom rounded-card overflow-hidden"
-                style={{ height: 'clamp(260px, 45vw, 650px)' }}
+                style={{ height: 'clamp(200px, 52vw, 650px)' }}
               >
                 <AppImage
                   src="/assets/images/foto-dra.jpg"
