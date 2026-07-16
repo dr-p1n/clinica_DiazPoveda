@@ -58,7 +58,7 @@ export default function IVTherapyInteractive() {
     <>
       {/* ── HERO ── */}
       <section
-        className="relative min-h-screen flex items-center overflow-hidden"
+        className="relative lg:min-h-screen flex items-start lg:items-center overflow-hidden"
         style={{
           background: 'var(--color-bg)',
           paddingTop: '80px',
@@ -86,12 +86,12 @@ export default function IVTherapyInteractive() {
         />
 
         <div className="mx-auto px-6 w-full relative z-10" style={{ maxWidth: '1100px' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-center py-4 lg:py-10">
+          <div className="grid grid-cols-2 gap-3 lg:gap-16 items-start lg:items-center py-4 lg:py-10">
             {/* Left: text */}
-            <div className="order-2 lg:order-1">
-              {/* Floating trust badges */}
+            <div>
+              {/* Floating trust badges — desktop only */}
               <div
-                className="flex flex-wrap justify-center gap-2 mb-4 lg:mb-8 animate-on-scroll"
+                className="hidden lg:flex flex-wrap justify-start gap-2 mb-8 animate-on-scroll"
                 style={{
                   animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both',
                 }}
@@ -114,9 +114,9 @@ export default function IVTherapyInteractive() {
               </div>
 
               <h1
-                className="font-display mb-3 lg:mb-6 leading-tight"
+                className="font-display mb-2 lg:mb-6 leading-tight"
                 style={{
-                  fontSize: 'clamp(32px, 8vw, 72px)',
+                  fontSize: 'clamp(22px, 6vw, 72px)',
                   fontWeight: 300,
                   color: 'var(--color-text)',
                   animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.2s both',
@@ -134,7 +134,7 @@ export default function IVTherapyInteractive() {
               </h1>
 
               <p
-                className="mb-5 lg:mb-10 leading-relaxed"
+                className="hidden lg:block mb-5 lg:mb-10 leading-relaxed"
                 style={{
                   fontSize: 'clamp(14px, 4vw, 18px)',
                   color: 'var(--color-muted)',
@@ -153,7 +153,7 @@ export default function IVTherapyInteractive() {
               >
                 <button
                   onClick={() => setBookOpen(true)}
-                  className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white transition-all"
+                  className="inline-flex items-center gap-2 px-4 lg:px-8 py-2.5 lg:py-4 text-sm lg:text-base font-semibold text-white transition-all"
                   style={{
                     background: 'var(--color-accent)',
                     borderRadius: 'var(--radius-pill)',
@@ -176,14 +176,14 @@ export default function IVTherapyInteractive() {
 
             {/* Right: image with floating card */}
             <div
-              className="relative order-1 lg:order-2"
+              className="relative"
               style={{
                 animation: 'animationIn 0.9s cubic-bezier(0.16,1,0.3,1) 0.4s both',
               }}
             >
               <div
                 className="img-zoom rounded-card overflow-hidden"
-                style={{ height: 'clamp(200px, 52vw, 650px)' }}
+                style={{ height: 'clamp(240px, 55vw, 650px)' }}
               >
                 <AppImage
                   src="/assets/images/foto-dra.jpg"
@@ -197,9 +197,9 @@ export default function IVTherapyInteractive() {
               </div>
 
               {/* Floating stats card */}
-              {/* Floating badge top-right */}
+              {/* Floating badge top-right — desktop only */}
               <div
-                className="absolute -top-4 -right-4 px-4 py-2 rounded-pill float-anim"
+                className="hidden lg:block absolute -top-4 -right-4 px-4 py-2 rounded-pill float-anim"
                 style={{
                   background: 'var(--color-accent)',
                   color: 'white',
