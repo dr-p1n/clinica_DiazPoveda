@@ -86,7 +86,7 @@ export default function IVTherapyInteractive() {
         />
 
         <div className="mx-auto px-6 w-full relative z-10" style={{ maxWidth: '1100px' }}>
-          <div className="grid grid-cols-2 gap-3 lg:gap-16 items-start lg:items-center py-4 lg:py-10">
+          <div className="grid grid-cols-2 gap-3 lg:gap-16 items-start lg:items-center pt-10 pb-4 lg:py-10">
             {/* Left: text */}
             <div>
               {/* Floating trust badges — desktop only */}
