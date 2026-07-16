@@ -89,9 +89,9 @@ export default function IVTherapyInteractive() {
           <div className="grid grid-cols-2 gap-3 lg:gap-16 items-start lg:items-center pt-10 pb-4 lg:py-10">
             {/* Left: text */}
             <div>
-              {/* Floating trust badges — desktop only */}
+              {/* Floating trust badges */}
               <div
-                className="hidden lg:flex flex-wrap justify-start gap-2 mb-8 animate-on-scroll"
+                className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-1.5 lg:gap-2 mb-3 lg:mb-8"
                 style={{
                   animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both',
                 }}
@@ -99,7 +99,7 @@ export default function IVTherapyInteractive() {
                 {[t('iv_hero.badge1'), t('iv_hero.badge2'), t('iv_hero.badge3')].map((badge, i) => (
                   <span
                     key={badge}
-                    className="text-xs font-semibold uppercase px-3 py-1.5 rounded-pill float-anim"
+                    className="text-xs font-semibold uppercase px-3 py-1.5 rounded-pill float-anim self-start"
                     style={{
                       background: 'var(--color-primary)',
                       color: 'var(--color-text)',
