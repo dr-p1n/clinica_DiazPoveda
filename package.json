@@ -40,6 +40,7 @@
   },
   "scripts": {
     "dev": "next dev -p 4028",
+    "prebuild": "rm -rf .next",
     "build": "next build",
     "start": "next dev -p 4028",
     "lint": "next lint",
