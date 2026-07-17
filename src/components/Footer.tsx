@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslation } from '@/context/LanguageContext';
-import AppLogo from '@/components/ui/AppLogo';
 import Icon from '@/components/ui/AppIcon';
 
 export default function Footer() {
@@ -23,7 +23,14 @@ export default function Footer() {
         {/* Left: Logo + tagline */}
         <div className="flex flex-col items-center sm:items-start gap-2">
           <Link href="/iv-therapy-services">
-            <AppLogo size={48} text="Dra. Ana Laura Diaz" iconName="HeartIcon" />
+            <Image
+              src="/assets/images/app_logo.svg"
+              alt="Dra. Ana Laura Díaz Poveda"
+              width={430}
+              height={80}
+              unoptimized
+              style={{ width: 'auto', height: 'auto', maxWidth: '260px' }}
+            />
           </Link>
           <p
             className="text-sm"
