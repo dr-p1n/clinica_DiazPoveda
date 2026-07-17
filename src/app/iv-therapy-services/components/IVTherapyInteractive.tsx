@@ -94,7 +94,7 @@ export default function IVTherapyInteractive() {
             {[t('iv_hero.badge1'), t('iv_hero.badge2'), t('iv_hero.badge3')].map((badge, i) => (
               <span
                 key={badge}
-                className="font-semibold uppercase px-2 py-1 rounded-pill float-anim"
+                className={`font-semibold uppercase px-2 py-1 rounded-pill float-anim${i === 2 ? ' col-span-2 justify-self-center' : ''}`}
                 style={{
                   background: 'var(--color-primary)',
                   color: 'var(--color-text)',
@@ -114,7 +114,7 @@ export default function IVTherapyInteractive() {
             <div>
               {/* Floating trust badges — desktop only (mobile rendered above) */}
               <div
-                className="hidden lg:flex flex-wrap justify-start gap-2 mb-8 animate-on-scroll"
+                className="hidden lg:flex flex-wrap justify-center gap-2 mb-8 animate-on-scroll"
                 style={{
                   animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both',
                 }}
@@ -137,7 +137,7 @@ export default function IVTherapyInteractive() {
               </div>
 
               <h1
-                className="font-display mb-2 lg:mb-6 leading-tight"
+                className="font-display mb-2 lg:mb-6 leading-tight mt-4 lg:mt-0 text-center lg:text-left"
                 style={{
                   fontSize: 'clamp(22px, 6vw, 72px)',
                   fontWeight: 300,
@@ -170,6 +170,7 @@ export default function IVTherapyInteractive() {
               </p>
 
               <div
+                className="flex lg:block justify-center lg:justify-start"
                 style={{
                   animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.5s both',
                 }}

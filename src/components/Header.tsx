@@ -135,7 +135,7 @@ export default function Header() {
               paddingLeft: '101px',
               fontFamily: 'Arial, Helvetica, sans-serif',
               fontSize: '11.5px',
-              color: '#666666',
+              color: '#D4845A',
               lineHeight: '1.5',
             }}
           >
