@@ -157,9 +157,9 @@ export default function IVTherapyInteractive() {
               </h1>
 
               <p
-                className="hidden lg:block mb-5 lg:mb-10 leading-relaxed"
+                className="block mb-4 lg:mb-10 leading-relaxed text-center lg:text-left"
                 style={{
-                  fontSize: 'clamp(14px, 4vw, 18px)',
+                  fontSize: 'clamp(11px, 3vw, 18px)',
                   color: 'var(--color-muted)',
                   fontFamily: 'var(--font-body)',
                   animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.35s both',
@@ -210,7 +210,7 @@ export default function IVTherapyInteractive() {
                 style={{ height: 'clamp(240px, 55vw, 650px)' }}
               >
                 <AppImage
-                  src="/assets/images/foto-dra.jpg"
+                  src="/assets/images/foto-dra.webp"
                   alt="Dra. Ana Laura Díaz Poveda, Medicina General, Panamá"
                   width={600}
                   height={650}
