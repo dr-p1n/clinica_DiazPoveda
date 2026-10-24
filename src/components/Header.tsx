@@ -32,16 +32,18 @@ export default function Header() {
         <div className="mx-auto" style={{ maxWidth: '1100px' }}>
           <div className="flex items-center justify-between px-6 pt-3 pb-1">
             {/* Logo */}
-            <Link href="/iv-therapy-services" className="flex flex-col min-w-0 flex-shrink">
-              <Image
-                src="/assets/images/app_logo.svg"
-                alt="Dra. Ana Laura Díaz Poveda"
-                width={430}
-                height={80}
-                unoptimized
-                priority
-                style={{ width: '100%', height: 'auto', maxWidth: '320px' }}
-              />
+            <div className="flex flex-col min-w-0 flex-shrink">
+              <Link href="/iv-therapy-services">
+                <Image
+                  src="/assets/images/app_logo.svg"
+                  alt="Dra. Ana Laura Díaz Poveda"
+                  width={430}
+                  height={80}
+                  unoptimized
+                  priority
+                  style={{ width: '100%', height: 'auto', maxWidth: '320px' }}
+                />
+              </Link>
               {/* Contact info: mobile only */}
               <div
                 className="flex flex-col md:hidden"
@@ -54,10 +56,19 @@ export default function Header() {
                   lineHeight: '1.5',
                 }}
               >
-                <span>Consultorios Punta Pacífica</span>
-                <span>+507 6612-2773 | dranalauradiaz@gmail.com</span>
+                <span>Consultorios Punta Pacífica &nbsp;|&nbsp; +507 6612-2773</span>
+                <a
+                  href="https://instagram.com/dranalauradiaz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1"
+                  style={{ color: '#D4845A', textDecoration: 'none' }}
+                >
+                  <Icon name="CameraIcon" size={9} variant="outline" />
+                  @dranalauradiaz
+                </a>
               </div>
-            </Link>
+            </div>
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center gap-8">
@@ -130,7 +141,7 @@ export default function Header() {
 
           {/* Contact info row: desktop only — paddingLeft = px-6 (24px) + name offset (77px) */}
           <div
-            className="hidden md:block pb-2"
+            className="hidden md:flex flex-col pb-2"
             style={{
               paddingLeft: '101px',
               fontFamily: 'Arial, Helvetica, sans-serif',
@@ -139,8 +150,17 @@ export default function Header() {
               lineHeight: '1.5',
             }}
           >
-            <div>Consultorios Punta Pacífica</div>
-            <div>+507 6612-2773 | dranalauradiaz@gmail.com</div>
+            <div>Consultorios Punta Pacífica &nbsp;|&nbsp; +507 6612-2773</div>
+            <a
+              href="https://instagram.com/dranalauradiaz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1"
+              style={{ color: '#D4845A', textDecoration: 'none' }}
+            >
+              <Icon name="CameraIcon" size={12} variant="outline" />
+              @dranalauradiaz
+            </a>
           </div>
         </div>
         {/* end maxWidth wrapper */}

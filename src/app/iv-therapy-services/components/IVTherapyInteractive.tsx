@@ -170,7 +170,7 @@ export default function IVTherapyInteractive() {
               </p>
 
               <div
-                className="flex lg:block justify-center lg:justify-start"
+                className="flex flex-col items-center lg:items-start gap-3"
                 style={{
                   animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.5s both',
                 }}
@@ -194,6 +194,30 @@ export default function IVTherapyInteractive() {
                 >
                   {t('iv_hero.cta')}
                   <Icon name="ArrowRightIcon" size={18} variant="outline" />
+                </button>
+                <button
+                  onClick={() => setBookOpen(true)}
+                  className="inline-flex items-center gap-2 px-4 lg:px-8 py-2.5 lg:py-4 text-sm lg:text-base font-semibold transition-all"
+                  style={{
+                    background: 'transparent',
+                    border: '2px solid var(--color-accent)',
+                    color: 'var(--color-accent)',
+                    borderRadius: 'var(--radius-pill)',
+                    fontFamily: 'var(--font-body)',
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.02)';
+                    (e.currentTarget as HTMLButtonElement).style.background = 'var(--color-accent)';
+                    (e.currentTarget as HTMLButtonElement).style.color = 'white';
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)';
+                    (e.currentTarget as HTMLButtonElement).style.background = 'transparent';
+                    (e.currentTarget as HTMLButtonElement).style.color = 'var(--color-accent)';
+                  }}
+                >
+                  {t('iv_hero.cta_corporate')}
+                  <Icon name="BuildingOfficeIcon" size={18} variant="outline" />
                 </button>
               </div>
             </div>
