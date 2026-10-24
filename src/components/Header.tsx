@@ -54,7 +54,7 @@ export default function Header() {
                   lineHeight: '1.5',
                 }}
               >
-                <span>Consultorios Punta Pacífica. Piso 8. #820</span>
+                <span>Consultorios Punta Pacífica</span>
                 <span>+507 6612-2773 | dranalauradiaz@gmail.com</span>
               </div>
             </Link>
@@ -139,7 +139,7 @@ export default function Header() {
               lineHeight: '1.5',
             }}
           >
-            <div>Consultorios Punta Pacífica. Piso 8. #820</div>
+            <div>Consultorios Punta Pacífica</div>
             <div>+507 6612-2773 | dranalauradiaz@gmail.com</div>
           </div>
         </div>
