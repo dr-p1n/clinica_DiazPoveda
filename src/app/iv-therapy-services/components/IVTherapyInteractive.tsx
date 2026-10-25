@@ -92,8 +92,12 @@ export default function IVTherapyInteractive() {
             className="grid grid-cols-2 lg:hidden gap-1.5 mb-3 pt-10"
             style={{ animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both' }}
           >
-            {[t('iv_hero.badge1'), t('iv_hero.badge2'), t('iv_hero.badge3'), t('iv_hero.badge4')].map(
-              (badge, i) => (
+            {[
+              t('iv_hero.badge1'),
+              t('iv_hero.badge2'),
+              t('iv_hero.badge3'),
+              t('iv_hero.badge4'),
+            ].map((badge, i) => (
               <span
                 key={badge}
                 className="font-semibold uppercase px-2 py-1 rounded-pill float-anim"
@@ -121,7 +125,12 @@ export default function IVTherapyInteractive() {
                   animation: 'animationIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both',
                 }}
               >
-                {[t('iv_hero.badge1'), t('iv_hero.badge2'), t('iv_hero.badge3'), t('iv_hero.badge4')].map((badge, i) => (
+                {[
+                  t('iv_hero.badge1'),
+                  t('iv_hero.badge2'),
+                  t('iv_hero.badge3'),
+                  t('iv_hero.badge4'),
+                ].map((badge, i) => (
                   <span
                     key={badge}
                     className="text-xs font-semibold uppercase px-3 py-1.5 rounded-pill float-anim"
