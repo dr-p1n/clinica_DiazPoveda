@@ -24,7 +24,8 @@
     {
       "id": "general",
       "name": "General Medicine Consultation",
-      "desc": "Full clinical evaluation, diagnosis, and treatment plan. Includes prescriptions and medical guidance.",
+      "desc": "",
+      "bullets": ["Clinical evaluation", "Medical Certificates", "Chronic Disease Follow-up", "Lab Results Review"],
       "price": "$60",
       "duration": "60 min"
     },

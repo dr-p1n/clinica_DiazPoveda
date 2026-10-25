@@ -35,6 +35,7 @@ export default function IVTherapyInteractive() {
     id: string;
     name: string;
     desc: string;
+    bullets?: string[];
     price: string;
     duration: string;
   }>;
@@ -317,9 +318,23 @@ export default function IVTherapyInteractive() {
                   >
                     {svc.name}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)' }}>
-                    {svc.desc}
-                  </p>
+                  {svc.bullets && svc.bullets.length > 0 ? (
+                    <ul
+                      className="text-sm leading-relaxed list-none"
+                      style={{ color: 'var(--color-muted)' }}
+                    >
+                      {svc.bullets.map((b) => (
+                        <li key={b} className="flex items-start gap-1.5 mb-1">
+                          <span style={{ color: 'var(--color-accent)', marginTop: '2px' }}>·</span>
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)' }}>
+                      {svc.desc}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}

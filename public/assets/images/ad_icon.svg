@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 210" width="200" height="210">
+  <g fill="#C4856A">
+
+    <!-- Letter A -->
+    <path d="
+      M 55,18
+      L 10,138 Q 10,145 18,145 L 28,145 Q 34,145 37,138
+      L 47,108 L 63,108
+      L 73,138 Q 76,145 82,145 L 92,145 Q 100,145 100,138
+      L 55,18 Z
+      M 50,90 L 55,72 L 60,90 Z
+    " fill-rule="evenodd"/>
+
+    <!-- Letter D with hook -->
+    <path d="
+      M 105,18 L 105,138
+      Q 105,145 113,145
+      L 140,145
+      Q 190,145 190,82
+      Q 190,18 140,18 Z
+
+      M 122,35 L 140,35
+      Q 168,35 168,82
+      Q 168,128 140,128
+      L 122,128 Z
+    " fill-rule="evenodd"/>
+
+    <!-- Hook from D bottom going left and down -->
+    <path d="
+      M 122,128 L 122,160
+      Q 122,178 104,178
+      Q 86,178 80,165
+    " fill="none" stroke="#C4856A" stroke-width="17" stroke-linecap="round"/>
+
+    <!-- Stethoscope tube from A bottom to head -->
+    <path d="
+      M 37,138 Q 20,155 30,175
+    " fill="none" stroke="#C4856A" stroke-width="17" stroke-linecap="round"/>
+
+    <!-- Stethoscope head outer ring -->
+    <circle cx="52" cy="185" r="22" fill="#C4856A"/>
+    <circle cx="52" cy="185" r="12" fill="white"/>
+    <circle cx="52" cy="185" r="6" fill="#C4856A"/>
+
+  </g>
+</svg>

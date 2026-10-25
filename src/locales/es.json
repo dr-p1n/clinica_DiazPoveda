@@ -23,8 +23,9 @@
   "services": [
     {
       "id": "general",
-      "name": "Consulta con Medicina General",
-      "desc": "Evaluaci\u00f3n cl\u00ednica completa, diagn\u00f3stico y plan de tratamiento. Incluye recetas y orientaci\u00f3n m\u00e9dica.",
+      "name": "Consulta de Medicina General",
+      "desc": "",
+      "bullets": ["Evaluaci\u00f3n cl\u00ednica", "Certificados M\u00e9dicos", "Seguimiento de Enfermedades Cr\u00f3nicas", "Revisi\u00f3n de Laboratorios"],
       "price": "$60",
       "duration": "60 min"
     },
