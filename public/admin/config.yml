@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+
+locale: es
+
+collections:
+  - name: "articles_es"
+    label: "Artículos (Español)"
+    files:
+      - label: "Lista de artículos"
+        name: "articles_list"
+        file: "src/locales/es.json"
+        fields:
+          - label: "Artículos"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - label: "Categoría"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Para Padres", value: "parents" }
+                  - { label: "Para Pacientes", value: "patients" }
+              - { label: "Etiqueta de categoría", name: "category_label", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Resumen", name: "excerpt", widget: "text" }
+              - { label: "Tiempo de lectura", name: "read_time", widget: "string", default: "5 min" }
+
+  - name: "articles_en"
+    label: "Articles (English)"
+    files:
+      - label: "Article list"
+        name: "articles_list_en"
+        file: "src/locales/en.json"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "For Parents", value: "parents" }
+                  - { label: "For Patients", value: "patients" }
+              - { label: "Category label", name: "category_label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Excerpt", name: "excerpt", widget: "text" }
+              - { label: "Read time", name: "read_time", widget: "string", default: "5 min" }
