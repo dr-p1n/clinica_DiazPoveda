@@ -466,6 +466,130 @@ export default function IVTherapyInteractive() {
         </div>
       </section>
 
+      {/* ── CONTACTO ── */}
+      <section style={{ background: 'var(--color-surface)', padding: 'var(--section-padding) 0' }}>
+        <div
+          className="mx-auto px-6 animate-on-scroll"
+          style={{
+            maxWidth: '1100px',
+            animation: 'animationIn 0.7s cubic-bezier(0.16,1,0.3,1) both',
+          }}
+        >
+          <h2
+            className="font-display mb-10 text-center"
+            style={{
+              fontSize: 'clamp(28px, 4vw, 48px)',
+              fontWeight: 300,
+              color: 'var(--color-text)',
+            }}
+          >
+            {t('contact.title')}
+          </h2>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-16">
+            {/* Ubicación */}
+            <div className="flex items-start gap-3">
+              <div
+                className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+                style={{ background: 'var(--color-primary)' }}
+              >
+                <Icon name="MapPinIcon" size={16} variant="outline" />
+              </div>
+              <div>
+                <p
+                  className="text-xs font-semibold uppercase tracking-widest mb-0.5"
+                  style={{ color: 'var(--color-muted)' }}
+                >
+                  Ubicación
+                </p>
+                <p className="text-sm font-medium" style={{ color: 'var(--color-text)' }}>
+                  {t('contact.location')}
+                </p>
+              </div>
+            </div>
+
+            {/* Teléfono */}
+            <div className="flex items-start gap-3">
+              <div
+                className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+                style={{ background: 'var(--color-primary)' }}
+              >
+                <Icon name="PhoneIcon" size={16} variant="outline" />
+              </div>
+              <div>
+                <p
+                  className="text-xs font-semibold uppercase tracking-widest mb-0.5"
+                  style={{ color: 'var(--color-muted)' }}
+                >
+                  WhatsApp
+                </p>
+                <a
+                  href="https://wa.me/50766122773"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium"
+                  style={{ color: 'var(--color-text)', textDecoration: 'none' }}
+                >
+                  {t('contact.phone')}
+                </a>
+              </div>
+            </div>
+
+            {/* Instagram */}
+            <div className="flex items-start gap-3">
+              <div
+                className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+                style={{ background: 'var(--color-primary)' }}
+              >
+                <Icon name="CameraIcon" size={16} variant="outline" />
+              </div>
+              <div>
+                <p
+                  className="text-xs font-semibold uppercase tracking-widest mb-0.5"
+                  style={{ color: 'var(--color-muted)' }}
+                >
+                  Instagram
+                </p>
+                <a
+                  href="https://instagram.com/dranalauradiaz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium"
+                  style={{ color: 'var(--color-text)', textDecoration: 'none' }}
+                >
+                  {t('contact.instagram')}
+                </a>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="flex items-start gap-3">
+              <div
+                className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+                style={{ background: 'var(--color-primary)' }}
+              >
+                <Icon name="EnvelopeIcon" size={16} variant="outline" />
+              </div>
+              <div>
+                <p
+                  className="text-xs font-semibold uppercase tracking-widest mb-0.5"
+                  style={{ color: 'var(--color-muted)' }}
+                >
+                  Email
+                </p>
+                <a
+                  href={`mailto:${t('contact.email')}`}
+                  className="text-sm font-medium"
+                  style={{ color: 'var(--color-text)', textDecoration: 'none' }}
+                >
+                  {t('contact.email')}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA BLOCK ── */}
       <section
         style={{

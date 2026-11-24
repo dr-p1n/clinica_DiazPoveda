@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
 import { useTranslation } from '@/context/LanguageContext';
 
@@ -8,6 +9,7 @@ type FilterType = 'all' | 'parents' | 'patients';
 
 interface Article {
   id: string;
+  slug?: string;
   category: string;
   category_label: string;
   title: string;
@@ -201,24 +203,34 @@ export default function EducationInteractive() {
                 </p>
 
                 {/* Read more */}
-                <button
-                  className="inline-flex items-center gap-2 text-sm font-semibold self-start transition-all group"
-                  style={{ color: 'var(--color-accent)' }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.gap = '10px';
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.gap = '8px';
-                  }}
-                >
-                  {t('lang') === 'en' ? 'Read more' : 'Leer más'}
-                  <Icon
-                    name="ArrowRightIcon"
-                    size={15}
-                    variant="outline"
-                    className="transition-transform group-hover:translate-x-1"
-                  />
-                </button>
+                {article.slug ? (
+                  <Link
+                    href={`/education/${article.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-semibold self-start transition-all group"
+                    style={{ color: 'var(--color-accent)' }}
+                  >
+                    {t('lang') === 'en' ? 'Read more' : 'Leer más'}
+                    <Icon
+                      name="ArrowRightIcon"
+                      size={15}
+                      variant="outline"
+                      className="transition-transform group-hover:translate-x-1"
+                    />
+                  </Link>
+                ) : (
+                  <button
+                    className="inline-flex items-center gap-2 text-sm font-semibold self-start transition-all group"
+                    style={{ color: 'var(--color-accent)' }}
+                  >
+                    {t('lang') === 'en' ? 'Read more' : 'Leer más'}
+                    <Icon
+                      name="ArrowRightIcon"
+                      size={15}
+                      variant="outline"
+                      className="transition-transform group-hover:translate-x-1"
+                    />
+                  </button>
+                )}
               </article>
             ))}
           </div>
