@@ -6,7 +6,7 @@
     "book": "Agendar cita"
   },
   "iv_hero": {
-    "headline": "Salud con propósito.",
+    "headline": "La salud empieza por entenderla.",
     "subline": "M\u00e9dico General en Panam\u00e1 con pasi\u00f3n por la educaci\u00f3n y la ciencia. Ofrezco consultas personalizadas, formaci\u00f3n en Soporte Vital B\u00e1sico y art\u00edculos que hacen la medicina accesible para todos.",
     "cta": "Agenda tu consulta",
     "cta_corporate": "Cotizaciones para empresas",
@@ -78,6 +78,13 @@
       "Sin lista de espera larga",
       "Manejo de s\u00edntomas agudos y cr\u00f3nicos"
     ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "location": "Consultorios Punta Pacífica",
+    "phone": "+507 6612-2773",
+    "instagram": "@dranalauradiaz",
+    "email": "dranalauradiaz@gmail.com"
   },
   "cta_block": {
     "headline": "\u00bfNecesitas ver a un m\u00e9dico?",
@@ -160,6 +167,15 @@
     "patients": "Para Pacientes"
   },
   "articles": [
+    {
+      "id": "es-mi-bebe",
+      "slug": "es-mi-bebe",
+      "category": "parents",
+      "category_label": "Para Padres",
+      "title": "Es mi beb\u00e9.",
+      "excerpt": "Un turno de obstetricia, una sala de partos llena, y una madre que aprendi\u00f3 que el instinto no tiene protocolo.",
+      "read_time": "5 min"
+    },
     {
       "id": "art1",
       "category": "parents",

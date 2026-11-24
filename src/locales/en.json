@@ -6,7 +6,7 @@
     "book": "Book a session"
   },
   "iv_hero": {
-    "headline": "Health with purpose.",
+    "headline": "Health starts with understanding it.",
     "subline": "General Medicine physician in Panama with a passion for education and science. I offer personalized consultations, Basic Life Support training, and articles that make medicine accessible to everyone.",
     "cta": "Book your consultation",
     "cta_corporate": "Corporate Quotes",
@@ -78,6 +78,13 @@
       "No long waiting lists",
       "Acute and chronic symptom management"
     ]
+  },
+  "contact": {
+    "title": "Contact",
+    "location": "Consultorios Punta Pacífica",
+    "phone": "+507 6612-2773",
+    "instagram": "@dranalauradiaz",
+    "email": "dranalauradiaz@gmail.com"
   },
   "cta_block": {
     "headline": "Need to see a doctor?",
@@ -160,6 +167,15 @@
     "patients": "For Patients"
   },
   "articles": [
+    {
+      "id": "es-mi-bebe",
+      "slug": "es-mi-bebe",
+      "category": "parents",
+      "category_label": "For Parents",
+      "title": "Es mi bebé.",
+      "excerpt": "An obstetrics shift, a full labor ward, and a mother who learned that instinct has no protocol.",
+      "read_time": "5 min"
+    },
     {
       "id": "art1",
       "category": "parents",
