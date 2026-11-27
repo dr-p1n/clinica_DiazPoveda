@@ -81,7 +81,7 @@
       {
         "id": "essential",
         "name": "Charla Esencial",
-        "desc": "Una charla para sensibilizar a tu equipo sobre un tema clave de salud. Ideal como primer paso o para una actividad puntual.",
+        "desc": "Una charla para sensibilizar a tu equipo sobre un tema clave de salud, escogido del menú de temas disponibles. Ideal como primer paso o para una actividad puntual.",
         "features": [
           "45–60 minutos, presencial o virtual",
           "1 tema a elegir",
@@ -128,7 +128,7 @@
         "featured": false
       }
     ],
-    "topics_title": "Temas disponibles",
+    "topics_title": "Menú de temas",
     "topics": [
       "Estrés, burnout y salud mental en el trabajo",
       "Prevención cardiovascular: presión, colesterol y azúcar",

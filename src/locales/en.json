@@ -81,7 +81,7 @@
       {
         "id": "essential",
         "name": "Essential Talk",
-        "desc": "A talk to raise your team's awareness on a key health topic. Ideal as a first step or a one-time activity.",
+        "desc": "A talk to raise your team's awareness on a key health topic, chosen from the available topics menu. Ideal as a first step or a one-time activity.",
         "features": [
           "45–60 minutes, in-person or virtual",
           "1 topic of your choice",
@@ -128,7 +128,7 @@
         "featured": false
       }
     ],
-    "topics_title": "Available topics",
+    "topics_title": "Topics menu",
     "topics": [
       "Stress, burnout and mental health at work",
       "Cardiovascular prevention: blood pressure, cholesterol and sugar",
