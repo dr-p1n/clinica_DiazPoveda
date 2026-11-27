@@ -93,7 +93,7 @@
       {
         "id": "workshop",
         "name": "Talk + Practical Workshop",
-        "desc": "Talk + practical workshop so your team can apply what they learn from day one. Ideal for creating real habit changes.",
+        "desc": "Talk + hands-on activity where your team puts what they learn into practice right away. Ideal for topics like First Aid, stress management, or active breaks.",
         "features": [
           "90–120 minutes",
           "Hands-on activity tailored to the topic",
@@ -130,6 +130,7 @@
     ],
     "topics_title": "Topics menu",
     "topics": [
+      "First Aid and emergency response",
       "Stress, burnout and mental health at work",
       "Cardiovascular prevention: blood pressure, cholesterol and sugar",
       "Sleep and performance",

@@ -93,7 +93,7 @@
       {
         "id": "workshop",
         "name": "Charla + Taller Práctico",
-        "desc": "Charla + taller práctico para que tu equipo aplique lo aprendido desde el primer día. Ideal para generar cambios reales en los hábitos.",
+        "desc": "Charla + dinámica práctica donde tu equipo pone en práctica lo aprendido al momento. Ideal para temas como Primeros Auxilios, manejo del estrés o pausas activas.",
         "features": [
           "90–120 minutos",
           "Dinámica práctica adaptada al tema",
@@ -130,6 +130,7 @@
     ],
     "topics_title": "Menú de temas",
     "topics": [
+      "Primeros Auxilios y respuesta ante emergencias",
       "Estrés, burnout y salud mental en el trabajo",
       "Prevención cardiovascular: presión, colesterol y azúcar",
       "Sueño y rendimiento",
