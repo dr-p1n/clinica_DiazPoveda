@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Icon from '@/components/ui/AppIcon';
 import { useTranslation } from '@/context/LanguageContext';
 
@@ -12,10 +12,151 @@ interface Package {
   featured: boolean;
 }
 
-const MAILTO = 'mailto:dranalauradiaz@gmail.com?subject=Cotización%20para%20charla%20empresarial';
+function ContactModal({ onClose }: { onClose: () => void }) {
+  const [copiedPhone, setCopiedPhone] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState(false);
+
+  const copy = (text: string, which: 'phone' | 'email') => {
+    navigator.clipboard.writeText(text);
+    if (which === 'phone') {
+      setCopiedPhone(true);
+      setTimeout(() => setCopiedPhone(false), 2000);
+    } else {
+      setCopiedEmail(true);
+      setTimeout(() => setCopiedEmail(false), 2000);
+    }
+  };
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center px-4"
+      style={{ background: 'rgba(0,0,0,0.45)' }}
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full flex flex-col gap-6"
+        style={{
+          maxWidth: '440px',
+          background: 'var(--color-bg)',
+          borderRadius: '24px',
+          padding: '40px 32px 32px',
+          boxShadow: '0 24px 64px rgba(0,0,0,0.18)',
+        }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full transition-all"
+          style={{ background: 'var(--color-surface)', color: 'var(--color-muted)' }}
+        >
+          <Icon name="XMarkIcon" size={16} variant="outline" />
+        </button>
+
+        <div>
+          <h3
+            className="font-display mb-1"
+            style={{ fontSize: '24px', fontWeight: 400, color: 'var(--color-text)' }}
+          >
+            Cotizar una charla
+          </h3>
+          <p
+            className="text-sm"
+            style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+          >
+            Contáctame por el medio que prefieras.
+          </p>
+        </div>
+
+        {/* WhatsApp */}
+        <div
+          className="flex items-center justify-between gap-4 p-4 rounded-2xl"
+          style={{ background: 'var(--color-surface)' }}
+        >
+          <div>
+            <p
+              className="text-xs font-semibold uppercase mb-0.5"
+              style={{
+                color: 'var(--color-muted)',
+                letterSpacing: '0.08em',
+                fontFamily: 'var(--font-body)',
+              }}
+            >
+              WhatsApp
+            </p>
+            <p
+              className="font-semibold"
+              style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}
+            >
+              +507 6612-2773
+            </p>
+          </div>
+          <button
+            onClick={() => copy('+50766122773', 'phone')}
+            className="flex items-center gap-1.5 px-4 py-2 text-sm font-semibold rounded-full transition-all"
+            style={{
+              background: copiedPhone ? 'var(--color-accent)' : 'var(--color-primary)',
+              color: copiedPhone ? '#fff' : 'var(--color-accent)',
+              fontFamily: 'var(--font-body)',
+              border: 'none',
+              cursor: 'pointer',
+            }}
+          >
+            <Icon name={copiedPhone ? 'CheckIcon' : 'ClipboardIcon'} size={14} variant="outline" />
+            {copiedPhone ? 'Copiado' : 'Copiar'}
+          </button>
+        </div>
+
+        {/* Email */}
+        <div
+          className="flex items-center justify-between gap-4 p-4 rounded-2xl"
+          style={{ background: 'var(--color-surface)' }}
+        >
+          <div>
+            <p
+              className="text-xs font-semibold uppercase mb-0.5"
+              style={{
+                color: 'var(--color-muted)',
+                letterSpacing: '0.08em',
+                fontFamily: 'var(--font-body)',
+              }}
+            >
+              Correo
+            </p>
+            <p
+              className="font-semibold"
+              style={{
+                color: 'var(--color-text)',
+                fontFamily: 'var(--font-body)',
+                fontSize: '14px',
+              }}
+            >
+              dranalauradiaz@gmail.com
+            </p>
+          </div>
+          <button
+            onClick={() => copy('dranalauradiaz@gmail.com', 'email')}
+            className="flex items-center gap-1.5 px-4 py-2 text-sm font-semibold rounded-full transition-all"
+            style={{
+              background: copiedEmail ? 'var(--color-accent)' : 'var(--color-primary)',
+              color: copiedEmail ? '#fff' : 'var(--color-accent)',
+              fontFamily: 'var(--font-body)',
+              border: 'none',
+              cursor: 'pointer',
+              flexShrink: 0,
+            }}
+          >
+            <Icon name={copiedEmail ? 'CheckIcon' : 'ClipboardIcon'} size={14} variant="outline" />
+            {copiedEmail ? 'Copiado' : 'Copiar'}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function CorporateInteractive() {
   const { t, tObj } = useTranslation();
+  const [contactOpen, setContactOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,6 +180,8 @@ export default function CorporateInteractive() {
 
   return (
     <>
+      {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />}
+
       {/* ── HERO ── */}
       <section
         style={{
@@ -142,8 +285,8 @@ export default function CorporateInteractive() {
                   ))}
                 </ul>
 
-                <a
-                  href={MAILTO}
+                <button
+                  onClick={() => setContactOpen(true)}
                   className="inline-flex items-center justify-center gap-2 py-3 text-sm font-semibold transition-all"
                   style={{
                     background: pkg.featured ? 'var(--color-accent)' : 'transparent',
@@ -151,12 +294,12 @@ export default function CorporateInteractive() {
                     color: pkg.featured ? '#fff' : 'var(--color-accent)',
                     borderRadius: 'var(--radius-pill)',
                     fontFamily: 'var(--font-body)',
-                    textDecoration: 'none',
+                    cursor: 'pointer',
                   }}
                 >
                   {t('corporate.package_btn')}
                   <Icon name="ArrowRightIcon" size={15} variant="outline" />
-                </a>
+                </button>
               </div>
             ))}
           </div>
@@ -268,19 +411,20 @@ export default function CorporateInteractive() {
           >
             {t('corporate.cta_title')}
           </h2>
-          <a
-            href={MAILTO}
+          <button
+            onClick={() => setContactOpen(true)}
             className="inline-flex items-center gap-2 px-10 py-4 text-base font-semibold text-white transition-all"
             style={{
               background: 'var(--color-accent)',
               borderRadius: 'var(--radius-pill)',
               fontFamily: 'var(--font-body)',
-              textDecoration: 'none',
+              border: 'none',
+              cursor: 'pointer',
             }}
           >
             {t('corporate.cta_btn')}
             <Icon name="ArrowRightIcon" size={18} variant="outline" />
-          </a>
+          </button>
         </div>
       </section>
     </>
