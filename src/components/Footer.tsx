@@ -32,12 +32,6 @@ export default function Footer() {
               style={{ width: 'auto', height: 'auto', maxWidth: '260px' }}
             />
           </Link>
-          <p
-            className="text-sm"
-            style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-          >
-            {t('footer.tagline')}
-          </p>
           <p className="text-xs mt-1" style={{ color: 'var(--color-muted)' }}>
             {t('footer.rights')}
           </p>
