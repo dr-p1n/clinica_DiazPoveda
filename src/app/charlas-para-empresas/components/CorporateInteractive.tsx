@@ -12,7 +12,7 @@ interface Package {
   featured: boolean;
 }
 
-const MAILTO = 'mailto:dranalauradiaz@gmail.com?subject=Cotización%20charla%20para%20empresa';
+const MAILTO = 'mailto:dranalauradiaz@gmail.com?subject=Cotización%20para%20charla%20empresarial';
 
 export default function CorporateInteractive() {
   const { t, tObj } = useTranslation();
