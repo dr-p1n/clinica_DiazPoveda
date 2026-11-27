@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 import { useTranslation } from '@/context/LanguageContext';
@@ -206,8 +207,8 @@ export default function IVTherapyInteractive() {
                   {t('iv_hero.cta')}
                   <Icon name="ArrowRightIcon" size={18} variant="outline" />
                 </button>
-                <button
-                  onClick={() => setBookOpen(true)}
+                <Link
+                  href="/charlas-para-empresas"
                   className="inline-flex items-center gap-2 px-4 lg:px-8 py-2.5 lg:py-4 text-sm lg:text-base font-semibold transition-all"
                   style={{
                     background: 'transparent',
@@ -215,21 +216,12 @@ export default function IVTherapyInteractive() {
                     color: 'var(--color-accent)',
                     borderRadius: 'var(--radius-pill)',
                     fontFamily: 'var(--font-body)',
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.02)';
-                    (e.currentTarget as HTMLButtonElement).style.background = 'var(--color-accent)';
-                    (e.currentTarget as HTMLButtonElement).style.color = 'white';
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)';
-                    (e.currentTarget as HTMLButtonElement).style.background = 'transparent';
-                    (e.currentTarget as HTMLButtonElement).style.color = 'var(--color-accent)';
+                    textDecoration: 'none',
                   }}
                 >
                   {t('iv_hero.cta_corporate')}
                   <Icon name="BuildingOfficeIcon" size={18} variant="outline" />
-                </button>
+                </Link>
               </div>
             </div>
 

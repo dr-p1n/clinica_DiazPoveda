@@ -72,6 +72,84 @@
       "Manejo de s\u00edntomas agudos y cr\u00f3nicos"
     ]
   },
+  "corporate": {
+    "title": "Charlas para empresas",
+    "subtitle": "Llevo la salud a tu equipo con información clara, práctica y basada en evidencia. La salud empieza por entenderla.",
+    "package_btn": "Cotizar",
+    "featured_label": "Más elegido",
+    "packages": [
+      {
+        "id": "essential",
+        "name": "Charla Esencial",
+        "desc": "Una charla para sensibilizar a tu equipo sobre un tema clave de salud. Ideal como primer paso o para una actividad puntual.",
+        "features": [
+          "45–60 minutos, presencial o virtual",
+          "1 tema a elegir",
+          "Espacio de preguntas y respuestas",
+          "Material resumen en PDF para los colaboradores"
+        ],
+        "featured": false
+      },
+      {
+        "id": "workshop",
+        "name": "Charla + Taller Práctico",
+        "desc": "Charla + taller práctico para que tu equipo aplique lo aprendido desde el primer día. Ideal para generar cambios reales en los hábitos.",
+        "features": [
+          "90–120 minutos",
+          "Dinámica práctica adaptada al tema",
+          "Encuesta previa para personalizar el contenido",
+          "Material descargable e infografía con la marca de tu empresa"
+        ],
+        "featured": true
+      },
+      {
+        "id": "quarterly",
+        "name": "Ciclo Trimestral",
+        "desc": "Un programa de 3 charlas en 3 meses, diseñado junto a Recursos Humanos. Ideal para empresas que buscan continuidad e impacto sostenido en el bienestar de su equipo.",
+        "features": [
+          "3 charlas en 3 meses (una al mes)",
+          "Temas conectados entre sí para un mayor impacto",
+          "Encuesta previa para personalizar el contenido",
+          "Informe final de participación e intereses",
+          "Renovable cada trimestre",
+          "Mejor tarifa por sesión que las charlas individuales"
+        ],
+        "featured": false
+      },
+      {
+        "id": "calendar",
+        "name": "Calendario de Fechas Especiales",
+        "desc": "Charlas en las fechas clave de salud del año, para que tu empresa celebre cada una con una actividad lista y con respaldo médico. Ideal para equipos de Recursos Humanos que planifican su calendario anual.",
+        "features": [
+          "3 a 4 charlas al año",
+          "Mes del Corazón (febrero), Día de la Salud Mental (octubre), Octubre Rosa y Noviembre Azul",
+          "Fechas planificadas desde el inicio del año",
+          "Contenido adaptado a cada fecha",
+          "Mejor tarifa por sesión que las charlas individuales"
+        ],
+        "featured": false
+      }
+    ],
+    "topics_title": "Temas disponibles",
+    "topics": [
+      "Estrés, burnout y salud mental en el trabajo",
+      "Prevención cardiovascular: presión, colesterol y azúcar",
+      "Sueño y rendimiento",
+      "Alimentación práctica para la jornada laboral",
+      "Sedentarismo y pausas activas",
+      "Salud de la mujer trabajadora",
+      "Cuándo ir al médico: señales de alerta"
+    ],
+    "topics_note": "¿Tienes otro tema en mente? Diseñamos la charla a la medida de tu empresa.",
+    "extras_title": "Extras opcionales",
+    "extras": [
+      "Grabación o versión virtual para quienes no puedan asistir",
+      "Charlas en inglés",
+      "Jornada de tamizaje (presión arterial y glucosa)"
+    ],
+    "cta_title": "¿Listo para cuidar la salud de tu equipo?",
+    "cta_btn": "Cotiza para tu empresa"
+  },
   "contact": {
     "title": "Contacto",
     "location": "Consultorios Punta Pacífica",

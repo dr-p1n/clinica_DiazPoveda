@@ -72,6 +72,84 @@
       "Acute and chronic symptom management"
     ]
   },
+  "corporate": {
+    "title": "Corporate Health Talks",
+    "subtitle": "I bring health to your team with clear, practical, evidence-based information. Health starts with understanding it.",
+    "package_btn": "Get a quote",
+    "featured_label": "Most popular",
+    "packages": [
+      {
+        "id": "essential",
+        "name": "Essential Talk",
+        "desc": "A talk to raise your team's awareness on a key health topic. Ideal as a first step or a one-time activity.",
+        "features": [
+          "45–60 minutes, in-person or virtual",
+          "1 topic of your choice",
+          "Q&A session",
+          "PDF summary for participants"
+        ],
+        "featured": false
+      },
+      {
+        "id": "workshop",
+        "name": "Talk + Practical Workshop",
+        "desc": "Talk + practical workshop so your team can apply what they learn from day one. Ideal for creating real habit changes.",
+        "features": [
+          "90–120 minutes",
+          "Hands-on activity tailored to the topic",
+          "Pre-event survey to personalize content",
+          "Downloadable materials and branded infographic"
+        ],
+        "featured": true
+      },
+      {
+        "id": "quarterly",
+        "name": "Quarterly Cycle",
+        "desc": "A 3-talk program over 3 months, designed with HR. Ideal for companies seeking continuity and sustained wellbeing impact.",
+        "features": [
+          "3 talks over 3 months (one per month)",
+          "Connected topics for greater impact",
+          "Pre-event survey to personalize content",
+          "Final participation and engagement report",
+          "Renewable each quarter",
+          "Better per-session rate than individual talks"
+        ],
+        "featured": false
+      },
+      {
+        "id": "calendar",
+        "name": "Special Dates Calendar",
+        "desc": "Talks on key health dates throughout the year, so your company celebrates each one with a ready-made, medically backed activity.",
+        "features": [
+          "3 to 4 talks per year",
+          "Heart Month (Feb), World Mental Health Day (Oct), Pink October & Blue November",
+          "Dates planned from the start of the year",
+          "Content tailored to each date",
+          "Better per-session rate than individual talks"
+        ],
+        "featured": false
+      }
+    ],
+    "topics_title": "Available topics",
+    "topics": [
+      "Stress, burnout and mental health at work",
+      "Cardiovascular prevention: blood pressure, cholesterol and sugar",
+      "Sleep and performance",
+      "Practical nutrition for the workday",
+      "Sedentary habits and active breaks",
+      "Women's health at work",
+      "When to see a doctor: warning signs"
+    ],
+    "topics_note": "Have another topic in mind? We design the talk around your company's needs.",
+    "extras_title": "Optional add-ons",
+    "extras": [
+      "Recording or virtual version for those who can't attend",
+      "Talks in English",
+      "Screening session (blood pressure and glucose)"
+    ],
+    "cta_title": "Ready to take care of your team's health?",
+    "cta_btn": "Get a quote for your company"
+  },
   "contact": {
     "title": "Contact",
     "location": "Consultorios Punta Pacífica",
