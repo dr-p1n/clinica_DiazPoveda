@@ -15,6 +15,7 @@ export default function Header() {
 
   const navLinks = [
     { href: '/iv-therapy-services', labelKey: 'nav.iv' },
+    { href: '/charlas-para-empresas', labelKey: 'nav.corporate' },
     { href: '/med-tech-startup', labelKey: 'nav.medtech' },
     { href: '/education', labelKey: 'nav.education' },
   ];
