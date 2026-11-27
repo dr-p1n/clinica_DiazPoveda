@@ -23,32 +23,25 @@
   "services": [
     {
       "id": "general",
-      "name": "Consulta de Medicina General",
+      "name": "Consulta de Medicina General (Primera visita)",
       "desc": "",
       "bullets": ["Evaluaci\u00f3n cl\u00ednica", "Certificados M\u00e9dicos", "Seguimiento de Enfermedades Cr\u00f3nicas", "Revisi\u00f3n de Laboratorios"],
       "price": "$60",
       "duration": "60 min"
     },
     {
+      "id": "chronic",
+      "name": "Seguimiento de Enfermedades Cr\u00f3nicas (2da visita en adelante)",
+      "desc": "Control y ajuste de tratamiento para hipertensi\u00f3n, diabetes, dislipidemia y otras condiciones cr\u00f3nicas.",
+      "price": "$45",
+      "duration": "60 min"
+    },
+    {
       "id": "certificates",
       "name": "Certificados M\u00e9dicos",
       "desc": "Certificado de buena salud f\u00edsica o certificado de incapacidad laboral o escolar.",
-      "price": "$60",
-      "duration": "20 min"
-    },
-    {
-      "id": "chronic",
-      "name": "Seguimiento de Enfermedades Cr\u00f3nicas",
-      "desc": "Control y ajuste de tratamiento para hipertensi\u00f3n, diabetes, dislipidemia y otras condiciones cr\u00f3nicas.",
-      "price": "$60",
+      "price": "$25",
       "duration": "30 min"
-    },
-    {
-      "id": "labs",
-      "name": "Revisi\u00f3n de Laboratorios",
-      "desc": "Interpretaci\u00f3n de resultados, orientaci\u00f3n sobre hallazgos y referencias a especialistas si es necesario.",
-      "price": "$60",
-      "duration": "20 min"
     }
   ],
   "how_it_works": {

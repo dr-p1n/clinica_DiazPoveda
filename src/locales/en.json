@@ -23,32 +23,25 @@
   "services": [
     {
       "id": "general",
-      "name": "General Medicine Consultation",
+      "name": "General Medicine Consultation (First visit)",
       "desc": "",
       "bullets": ["Clinical evaluation", "Medical Certificates", "Chronic Disease Follow-up", "Lab Results Review"],
       "price": "$60",
       "duration": "60 min"
     },
     {
+      "id": "chronic",
+      "name": "Chronic Disease Follow-up (2nd visit onwards)",
+      "desc": "Monitoring and treatment adjustment for hypertension, diabetes, dyslipidemia, and other chronic conditions.",
+      "price": "$45",
+      "duration": "60 min"
+    },
+    {
       "id": "certificates",
       "name": "Medical Certificates",
       "desc": "Certificate of good physical health or medical leave certificate for work or school.",
-      "price": "$60",
-      "duration": "20 min"
-    },
-    {
-      "id": "chronic",
-      "name": "Chronic Disease Follow-up",
-      "desc": "Monitoring and treatment adjustment for hypertension, diabetes, dyslipidemia, and other chronic conditions.",
-      "price": "$60",
+      "price": "$25",
       "duration": "30 min"
-    },
-    {
-      "id": "labs",
-      "name": "Lab Results Review",
-      "desc": "Interpretation of results, guidance on findings, and specialist referrals when needed.",
-      "price": "$60",
-      "duration": "20 min"
     }
   ],
   "how_it_works": {
