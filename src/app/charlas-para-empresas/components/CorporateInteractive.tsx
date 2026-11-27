@@ -12,8 +12,7 @@ interface Package {
   featured: boolean;
 }
 
-const WHATSAPP =
-  'https://wa.me/50766122773?text=Hola%2C%20me%20interesa%20cotizar%20una%20charla%20para%20mi%20empresa.';
+const MAILTO = 'mailto:dranalauradiaz@gmail.com?subject=Cotización%20charla%20para%20empresa';
 
 export default function CorporateInteractive() {
   const { t, tObj } = useTranslation();
@@ -144,9 +143,7 @@ export default function CorporateInteractive() {
                 </ul>
 
                 <a
-                  href={WHATSAPP}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={MAILTO}
                   className="inline-flex items-center justify-center gap-2 py-3 text-sm font-semibold transition-all"
                   style={{
                     background: pkg.featured ? 'var(--color-accent)' : 'transparent',
@@ -272,9 +269,7 @@ export default function CorporateInteractive() {
             {t('corporate.cta_title')}
           </h2>
           <a
-            href={WHATSAPP}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={MAILTO}
             className="inline-flex items-center gap-2 px-10 py-4 text-base font-semibold text-white transition-all"
             style={{
               background: 'var(--color-accent)',
